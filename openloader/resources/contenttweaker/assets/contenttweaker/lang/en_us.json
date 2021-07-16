@@ -1,3 +1,9 @@
 {
-"item.contenttweaker.cubecake_slice": "CubeCake Slice"
+"item.contenttweaker.cubecake_slice": "CubeCake Slice",
+"item.contenttweaker.raw_copper": "Raw Copper",
+"item.contenttweaker.raw_iron": "Raw Iron",
+"item.contenttweaker.raw_gold": "Raw Gold",
+"block.contenttweaker.raw_copper_block": "Block of Raw Copper",
+"block.contenttweaker.raw_iron_block": "Block of Raw Iron",
+"block.contenttweaker.raw_gold_block": "Block of Raw Gold"
 }
