@@ -1,0 +1,10 @@
+{
+  "styles": {
+    "Computer Nerd": {
+      "x": 0,
+      "y": 0,
+      "frameType": "RECTANGULAR",
+      "texture": "computer_nerd"
+    }
+  }
+}

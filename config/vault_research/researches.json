@@ -1,0 +1,27 @@
+{
+  "MOD_RESEARCHES": [
+    {
+      "modIds": [
+        "refinedstorage"
+        ],
+        "restrictions": {
+          "restricts": {
+            "CRAFTABILITY": true,
+            "ENTITY_HITTABILITY": false,
+            "BLOCK_HITTABILITY": false,
+            "USABILITY": true,
+            "BLOCK_INTERACTABILITY": true,
+            "DIMENSION_TRAVEL": false,
+            "ENTITY_INTERACTABILITY": false,
+            "EQUIP": false
+
+          }
+        },
+        "name": "Computer Nerd",
+        "cost": 1
+    }
+  ],
+  "CUSTOM_RESEARCHES": [
+    
+  ]
+}
