@@ -1,0 +1,77 @@
+{
+	id: "62780808D8E4422A",
+	group: "",
+	order_index: 0,
+	filename: "research",
+	title: "Research",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Engineering I",
+			icon: "create:andesite_alloy",
+			x: 0.0d,
+			y: 0.0d,
+			subtitle: "Time to grease them elbows!",
+			description: ["Unlocks basic Create items!"],
+			id: "5A6AF482905FB42D",
+			tasks: [{
+				id: "6AA1E5637628A324",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "2B3B24535EE6D861",
+				type: "gamestage",
+				title: "Engineering I",
+				icon: "create:wrench",
+				auto: "invisible",
+				stage: "engineeri"
+			}]
+		},
+		{
+			title: "Engineering II",
+			icon: "create:copper_ingot",
+			x: 0.0d,
+			y: -2.0d,
+			subtitle: "Time to grease them elbows!",
+			description: ["Unlocks more advanced Create items!"],
+			dependencies: ["5A6AF482905FB42D"],
+			id: "314DF3F9ED665D5D",
+			tasks: [{
+				id: "7488D75F022591F9",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "5B6DB8A2B61D36C6",
+				type: "gamestage",
+				title: "Engineering II",
+				icon: "create:wrench",
+				auto: "invisible",
+				stage: "engineerii"
+			}]
+		},
+		{
+			title: "Engineering III",
+			icon: "create:brass_ingot",
+			x: 0.0d,
+			y: -4.0d,
+			dependencies: ["314DF3F9ED665D5D"],
+			id: "3CDA1BC521483915",
+			tasks: [{
+				id: "160DDC4141B52DAD",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "1D158B2A295F2DBD",
+				type: "gamestage",
+				auto: "invisible",
+				stage: "engineeriii"
+			}]
+		}
+	]
+}

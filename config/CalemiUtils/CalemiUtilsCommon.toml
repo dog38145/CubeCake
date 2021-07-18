@@ -7,7 +7,7 @@
 
 [WorldGen]
 	#Raritanium Ore Gen
-	raritaniumOreGen = true
+	raritaniumOreGen = false
 	#Raritanium Veins Per Chunk
 	raritaniumOreVeinsPerChunk = 4
 	#Raritanium Vein Size
@@ -31,7 +31,7 @@
 
 [Economy]
 	#Currency Name
-	currencyName = "RC"
+	currencyName = "C"
 	#Bank Currency Capacity
 	#The max amount of currency the Bank can store.
 	#Range: 0 ~ 99999999
