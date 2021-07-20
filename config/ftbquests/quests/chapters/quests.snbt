@@ -1,0 +1,862 @@
+{
+	id: "29666852B41CD958",
+	group: "",
+	order_index: 0,
+	filename: "quests",
+	title: "Quests",
+	icon: "ftbquests:book",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Basic Materials",
+			icon: "minecraft:crafting_table",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "We all start somewhere.",
+			description: ["Welcome to CubeCake! As you can see, doing quests will give you cakes. Use these cake slices to unlock technologies in the research tab!"],
+			size: 2.0d,
+			id: "7E1B3E62F238C3D3",
+			tasks: [
+				{
+					id: "042CCCB1353D496C",
+					type: "item",
+					title: "Any #minecraft:logs",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "minecraft:logs"
+						}
+					},
+					count: 32L
+				},
+				{
+					id: "75F8C715492E52D1",
+					type: "item",
+					title: "Any #forge:cobblestone",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "forge:cobblestone"
+						}
+					},
+					count: 32L
+				}
+			],
+			rewards: [
+				{
+					id: "386E1F8752BEE7EB",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "207B7042B6F716C4",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Iron Man",
+			icon: {
+				id: "minecraft:iron_chestplate",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 2.5d,
+			y: 0.0d,
+			subtitle: "Has he lost his mind?",
+			description: ["Can he see or is he blind?"],
+			dependencies: ["7E1B3E62F238C3D3"],
+			id: "5D59DA37882F3D03",
+			tasks: [
+				{
+					id: "6B5EEEF9423B0C97",
+					type: "item",
+					item: {
+						id: "minecraft:iron_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "489E90A831E4AF68",
+					type: "item",
+					item: {
+						id: "minecraft:iron_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "14CB304A846B45AB",
+					type: "item",
+					item: {
+						id: "minecraft:iron_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "4E4F2AB6CB5E3F8B",
+					type: "item",
+					item: {
+						id: "minecraft:iron_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [{
+				id: "2A4AFBCDDC3F592E",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Super Man",
+			icon: {
+				id: "minecraft:elytra",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 4.5d,
+			y: 0.0d,
+			subtitle: "Well, you can fly so that's close enough.",
+			description: ["Woah, rich guy over here."],
+			dependencies: ["5D59DA37882F3D03"],
+			id: "68240BCFEC87F8DD",
+			tasks: [{
+				id: "0AB761F48B113F26",
+				type: "item",
+				item: {
+					id: "minecraft:elytra",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: "71D50E93D7FD68DF",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Big Game Hunter",
+			x: -1.5d,
+			y: -3.5d,
+			subtitle: "That is quite the lad.",
+			description: ["Killing a hoglin and stuffing the whole thing probably wasn't easy!"],
+			dependencies: [
+				"45148E7537F38CEE",
+				"0DA39C5CE350D1FA"
+			],
+			id: "3231C680C6B5DE5A",
+			tasks: [{
+				id: "03213098A992C84E",
+				type: "item",
+				item: "nethers_delight:stuffed_hoglin_item"
+			}],
+			rewards: [{
+				id: "3FCEF07B94194FC1",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Not So Fast Food",
+			x: -1.0d,
+			y: -1.5d,
+			subtitle: "mmm chezburger",
+			description: ["Everybody loves hamburgers!"],
+			dependencies: [
+				"7CCCBE9F3A21D8A9",
+				"7E1B3E62F238C3D3"
+			],
+			id: "0DA39C5CE350D1FA",
+			tasks: [{
+				id: "17942E521EB6D929",
+				type: "item",
+				item: "farmersdelight:hamburger"
+			}],
+			rewards: [{
+				id: "130FDCE3D9F1B59F",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "The Ouchy Flower",
+			x: 6.5d,
+			y: -1.0d,
+			subtitle: "Try not to eat it, please.",
+			description: ["A vanilla mob farmer's best friend."],
+			dependencies: ["3A8843745BC2F6D8"],
+			id: "2F00D4A698A684D2",
+			tasks: [{
+				id: "42D039281A3FEF77",
+				type: "item",
+				item: "minecraft:wither_rose"
+			}],
+			rewards: [
+				{
+					id: "5C8CC277CF6971F3",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "3B3A34D23B9EE74A",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Nether's Most Wanted",
+			x: 4.5d,
+			y: 1.0d,
+			subtitle: "Even harder to get.",
+			description: ["Also might wanna get a bunch of these bad boys!"],
+			dependencies: ["5ACFA6B5A73F4C91"],
+			id: "5FCB4B0208BC348D",
+			tasks: [{
+				id: "58E2B6F3B743C453",
+				type: "item",
+				item: "minecraft:netherite_ingot"
+			}],
+			rewards: [{
+				id: "20E54121494A47FD",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Packed",
+			x: 6.5d,
+			y: 1.0d,
+			subtitle: "Big boy.",
+			description: ["Not a requirement, but this backpack has a massive storage space!"],
+			dependencies: ["5FCB4B0208BC348D"],
+			id: "65E74605FFF7B224",
+			tasks: [{
+				id: "635CD3F511E668C3",
+				type: "item",
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}],
+			rewards: [
+				{
+					id: "5262B03019B9AF2A",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "488FBCFCF724E793",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Shine Bright",
+			x: 2.5d,
+			y: 1.0d,
+			subtitle: "Not so easy to get a lot of.",
+			description: ["You're gonna need a lot of these in this pack!"],
+			dependencies: ["7E1B3E62F238C3D3"],
+			id: "5ACFA6B5A73F4C91",
+			tasks: [{
+				id: "3FAE28F0813002DC",
+				type: "item",
+				item: "minecraft:diamond",
+				count: 16L
+			}],
+			rewards: [{
+				id: "543E257BE2EACF9B",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Almost Creative",
+			x: 6.5d,
+			y: 0.0d,
+			subtitle: "And I don't mean your artistic skill.",
+			description: ["Now you can fly like a real super hero!"],
+			dependencies: ["68240BCFEC87F8DD"],
+			id: "044248D1F2DF2EA3",
+			tasks: [{
+				id: "5C2D03F1E4BF3319",
+				type: "item",
+				item: "losttrinkets:magical_feathers"
+			}],
+			rewards: [
+				{
+					id: "0D1DF9B60B5F7570",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "6BC75B2D3B016A61",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Withered [Skull] of Evil",
+			x: 4.5d,
+			y: -1.0d,
+			subtitle: "Not to be confused with a withered hand of evil.",
+			description: ["What are you trying, boy??"],
+			dependencies: ["035105BEB23AE45C"],
+			id: "3A8843745BC2F6D8",
+			tasks: [{
+				id: "02A073B402DE4154",
+				type: "item",
+				item: "minecraft:wither_skeleton_skull",
+				count: 3L
+			}],
+			rewards: [{
+				id: "0DA4F694AD1E0199",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Screw the Nether",
+			x: 2.5d,
+			y: -1.0d,
+			subtitle: "You know what?",
+			description: ["Collect the minimum amount of obsidian required to build a nether portal."],
+			dependencies: ["7E1B3E62F238C3D3"],
+			id: "035105BEB23AE45C",
+			tasks: [{
+				id: "26EC7B5DA499D8A1",
+				type: "item",
+				item: "minecraft:obsidian",
+				count: 10L
+			}],
+			rewards: [{
+				id: "172A3308F40577B4",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Apprentice",
+			icon: "ars_nouveau:novice_spell_book",
+			x: 0.0d,
+			y: -2.5d,
+			subtitle: "Are you a monkey by chance?",
+			description: ["Delve into the world of magic!"],
+			dependencies: ["7E1B3E62F238C3D3"],
+			id: "510C3AFABF41AD90",
+			tasks: [
+				{
+					id: "1FA7B118A191BA4B",
+					type: "item",
+					item: {
+						id: "ars_nouveau:novice_hood",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "5FD4400636CFCFB0",
+					type: "item",
+					item: {
+						id: "ars_nouveau:novice_robes",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "381A324AE88EC3F3",
+					type: "item",
+					item: {
+						id: "ars_nouveau:novice_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "01B077A913E97AB3",
+					type: "item",
+					item: {
+						id: "ars_nouveau:novice_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "6D9AB4FFFBD9723F",
+					type: "item",
+					item: {
+						id: "ars_nouveau:novice_spell_book",
+						Count: 1b,
+						tag: {
+							mode: 0,
+							spells: ",touch,harm,break,self,projectile"
+						}
+					}
+				}
+			],
+			rewards: [{
+				id: "6E1B558712606BFC",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Archmage",
+			icon: "ars_nouveau:archmage_spell_book",
+			x: 0.0d,
+			y: -4.5d,
+			subtitle: "A true master of magical wizardry.",
+			description: ["Now the balloons won't stand a chance."],
+			dependencies: ["510C3AFABF41AD90"],
+			id: "44521398ADBEFCD0",
+			tasks: [
+				{
+					id: "2102048A34F20A4C",
+					type: "item",
+					item: "ars_nouveau:archmage_spell_book"
+				},
+				{
+					id: "0420A1A3159EF26D",
+					type: "item",
+					item: "ars_nouveau:belt_of_levitation"
+				},
+				{
+					id: "2E8C514E1C4E794E",
+					type: "item",
+					item: "ars_nouveau:ring_of_greater_discount"
+				},
+				{
+					id: "3DE5B8A8E8196EB5",
+					type: "item",
+					item: {
+						id: "ars_nouveau:ring_of_amplify",
+						Count: 1b,
+						tag: {}
+					}
+				}
+			],
+			rewards: [{
+				id: "4C301A5176F423F1",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Oh Honey!",
+			x: -1.0d,
+			y: -6.0d,
+			subtitle: "Yummy!",
+			description: ["You probably want to automate this."],
+			dependencies: ["3231C680C6B5DE5A"],
+			id: "7A2B30FED3F2129D",
+			tasks: [{
+				id: "3EE366C9E4D14D29",
+				type: "item",
+				item: "farmersdelight:honey_glazed_ham_block",
+				count: 27L
+			}],
+			rewards: [
+				{
+					id: "2882DF915C215925",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "1207BE4DC765E8E1",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Why?",
+			x: 0.0d,
+			y: -7.0d,
+			subtitle: "Why?",
+			description: ["Why?"],
+			dependencies: ["44521398ADBEFCD0"],
+			id: "2B737497B5E37D28",
+			tasks: [{
+				id: "7F71AF47E8212476",
+				type: "item",
+				item: "ars_nouveau:mana_gem_block",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: "3B612598B941F42B",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "51407E7037097BF0",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Brewer",
+			x: 1.0d,
+			y: -1.5d,
+			subtitle: "I'm a wot?",
+			description: ["You're a wizard Harry!"],
+			dependencies: ["7E1B3E62F238C3D3"],
+			dependency_requirement: "all_started",
+			id: "510DA0C2C2ADADE2",
+			tasks: [{
+				id: "50845EC739AE2F92",
+				type: "item",
+				item: "minecraft:brewing_stand"
+			}],
+			rewards: [{
+				id: "2D9CF803F363F2F9",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "The Engineer",
+			icon: "create:goggles",
+			x: 0.0d,
+			y: 2.0d,
+			subtitle: "Is engi-here!",
+			description: ["Ahahahaha! *cough cough*"],
+			dependencies: [
+				"7E1B3E62F238C3D3",
+				"5A6AF482905FB42D"
+			],
+			id: "7595AC393F56EC67",
+			tasks: [
+				{
+					id: "5EADA9C8BA2F9E30",
+					type: "item",
+					item: "create:wrench"
+				},
+				{
+					id: "19C2184F8602F106",
+					type: "item",
+					item: "create:goggles"
+				},
+				{
+					id: "2CF5870C5223BE60",
+					type: "item",
+					item: "create:speedometer"
+				},
+				{
+					id: "4AF5321C60DE4247",
+					type: "item",
+					item: "create:stressometer"
+				}
+			],
+			rewards: [{
+				id: "770BAB6FDB78BB0D",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Living Up to Your Name",
+			icon: "create:flywheel",
+			x: -1.5d,
+			y: 3.5d,
+			subtitle: "Become an engine engineer!",
+			description: ["MOAR POWAH!"],
+			dependencies: [
+				"7595AC393F56EC67",
+				"3CDA1BC521483915"
+			],
+			id: "41C04FE070A93D46",
+			tasks: [
+				{
+					id: "5AB206EF3A40C7A3",
+					type: "item",
+					item: "create:furnace_engine"
+				},
+				{
+					id: "3D47E992DE86D2AD",
+					type: "item",
+					item: "create:flywheel"
+				},
+				{
+					id: "1B9AD2905D8F0E80",
+					type: "item",
+					item: "createaddition:furnace_burner"
+				},
+				{
+					id: "1C7ECCFA24595A5A",
+					type: "item",
+					item: "createaddition:crude_burner"
+				}
+			],
+			rewards: [{
+				id: "15710092E0D9BA3A",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Crafting MKII",
+			icon: "create:mechanical_crafter",
+			x: 1.5d,
+			y: 3.5d,
+			subtitle: "Crafting but better!",
+			description: ["Automate some annoying recipes with these blocks!"],
+			dependencies: [
+				"7595AC393F56EC67",
+				"3CDA1BC521483915"
+			],
+			id: "7D8B7E860395F5C2",
+			tasks: [
+				{
+					id: "5F57472ABC48FF8E",
+					type: "item",
+					item: "create:deployer",
+					count: 3L
+				},
+				{
+					id: "7542BFA2A05D49D4",
+					type: "item",
+					item: "create:mechanical_crafter",
+					count: 21L
+				},
+				{
+					id: "1061CA336991AEA4",
+					type: "item",
+					item: "create:mechanical_saw"
+				},
+				{
+					id: "5E8BC771465EF7E0",
+					type: "item",
+					item: "create:mechanical_press"
+				},
+				{
+					id: "74AA5D153D4A0CF9",
+					type: "item",
+					item: "create:mechanical_mixer"
+				}
+			],
+			rewards: [{
+				id: "74CB75CE4E40E753",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Teenage Angst",
+			x: 1.5d,
+			y: -3.5d,
+			subtitle: "It's not a phase mom!",
+			description: ["Get all the required materials to make a potion base."],
+			dependencies: ["510DA0C2C2ADADE2"],
+			id: "4F7F469E8EFC6421",
+			tasks: [{
+				id: "6155200DD278BE62",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "minecraft:awkward"
+					}
+				}
+			}],
+			rewards: [{
+				id: "4DB2E2C519745677",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "Magic Wand",
+			x: 0.0d,
+			y: 5.5d,
+			subtitle: "Doesn't actually do magic, sorry.",
+			description: ["Build your buildings symetrically!"],
+			dependencies: [
+				"22E5C9B841257561",
+				"41C04FE070A93D46",
+				"7D8B7E860395F5C2"
+			],
+			id: "51F37DB466A69E13",
+			tasks: [{
+				id: "760ED6FCDA514BEA",
+				type: "item",
+				item: {
+					id: "create:wand_of_symmetry",
+					Count: 1b,
+					tag: {
+						symmetry: {
+							type: "empty",
+							pos: [
+								0.0f,
+								0.0f,
+								0.0f
+							],
+							enable: 1b,
+							direction: 0
+						},
+						enable: 0b
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: "782E06DEDF06E6AE",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "32F9A05C08AAC4CB",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		},
+		{
+			title: "Very Precision",
+			x: 1.5d,
+			y: 5.5d,
+			subtitle: "Much wow",
+			description: ["Make far too many precision mechanisms."],
+			dependencies: ["7D8B7E860395F5C2"],
+			id: "3F883560E4A86BB6",
+			tasks: [{
+				id: "2F379B7BDCBF2C6B",
+				type: "item",
+				item: "create:precision_mechanism",
+				count: 64L
+			}],
+			rewards: [{
+				id: "00EDE474F4C14534",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "A Call to Arms",
+			icon: "create:mechanical_arm",
+			x: -1.5d,
+			y: 5.5d,
+			subtitle: "Sorting!",
+			description: ["I bet you could make a cool storage system using these filters."],
+			dependencies: ["41C04FE070A93D46"],
+			id: "3F0B7651DAB7C95B",
+			tasks: [
+				{
+					id: "2C1E974C5DE90CEF",
+					type: "item",
+					item: "create:mechanical_arm"
+				},
+				{
+					id: "72C479CEA6C1DECA",
+					type: "item",
+					item: {
+						id: "create:attribute_filter",
+						Count: 1b,
+						tag: {}
+					},
+					count: 3L
+				},
+				{
+					id: "6F6E7FF35E2418C2",
+					type: "item",
+					item: "minecraft:chest",
+					count: 4L
+				},
+				{
+					id: "5B8DE7599208DD84",
+					type: "item",
+					item: "create:depot"
+				},
+				{
+					id: "4D6634AB8A3CC275",
+					type: "item",
+					item: "create:brass_funnel",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: "04F2A027BD0D19E4",
+				type: "item",
+				item: "contenttweaker:cubecake_slice"
+			}]
+		},
+		{
+			title: "MEDIC!",
+			x: 1.0d,
+			y: -6.0d,
+			subtitle: "Isn't bound to \"E\".",
+			description: ["Gonna have to be your own medic."],
+			dependencies: ["4F7F469E8EFC6421"],
+			id: "3AE22293895F5B4C",
+			tasks: [
+				{
+					id: "63FEC662B79846E8",
+					type: "item",
+					item: {
+						id: "minecraft:potion",
+						Count: 1b,
+						tag: {
+							Potion: "minecraft:regeneration"
+						}
+					}
+				},
+				{
+					id: "2059E47F412F00A3",
+					type: "item",
+					item: {
+						id: "minecraft:potion",
+						Count: 1b,
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+				}
+			],
+			rewards: [
+				{
+					id: "79F5F0EE7FC55439",
+					type: "item",
+					item: "contenttweaker:cubecake_slice"
+				},
+				{
+					id: "4CFE72D11C8EFAFC",
+					type: "loot",
+					table_id: 738597497860486577L
+				}
+			]
+		}
+	]
+}

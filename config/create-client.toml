@@ -19,7 +19,7 @@
 	enableRainbowDebug = true
 	# 
 	#Use modern OpenGL features to drastically increase performance.
-	experimentalRendering = false
+	experimentalRendering = true
 	# 
 	#Offset the overlay from goggle- and hover- information by this many pixels on the X axis; Use /create overlay
 	#Range: > -2147483648

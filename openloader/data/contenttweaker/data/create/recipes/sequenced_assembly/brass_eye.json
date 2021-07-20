@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_ingot"
+  },
+  "transitionalItem": {
+    "item": "contenttweaker:brass_ball"
+  },
+  "sequence": [
+      {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "contenttweaker:brass_ball"
+        }
+      ],
+      "results": [
+        {
+          "item": "contenttweaker:brass_ball"
+        }
+      ],
+      "processingTime": 100
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "contenttweaker:brass_ball"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "contenttweaker:brass_ball"
+        }
+      ]
+    },
+	    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "contenttweaker:brass_ball"
+        },
+        {
+          "item": "minecraft:glass_pane"
+        }
+      ],
+      "results": [
+        {
+          "item": "contenttweaker:brass_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "contenttweaker:brass_eye",
+      "count": 1,
+      "chance": 100.0
+    }
+	],
+  "loops": 0
+}

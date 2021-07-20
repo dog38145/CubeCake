@@ -1,16 +1,17 @@
 {
 	id: "62780808D8E4422A",
 	group: "",
-	order_index: 0,
+	order_index: 1,
 	filename: "research",
 	title: "Research",
+	icon: "minecraft:experience_bottle",
 	default_quest_shape: "",
 	quests: [
 		{
 			title: "Engineering I",
 			icon: "create:andesite_alloy",
 			x: 0.0d,
-			y: 0.0d,
+			y: 2.0d,
 			subtitle: "Time to grease them elbows!",
 			description: ["Unlocks basic Create items!"],
 			id: "5A6AF482905FB42D",
@@ -33,7 +34,7 @@
 			title: "Engineering II",
 			icon: "create:copper_ingot",
 			x: 0.0d,
-			y: -2.0d,
+			y: 0.0d,
 			subtitle: "Time to grease them elbows!",
 			description: ["Unlocks more advanced Create items!"],
 			dependencies: ["5A6AF482905FB42D"],
@@ -42,6 +43,7 @@
 				id: "7488D75F022591F9",
 				type: "item",
 				item: "contenttweaker:cubecake_slice",
+				count: 2L,
 				consume_items: true
 			}],
 			rewards: [{
@@ -57,20 +59,160 @@
 			title: "Engineering III",
 			icon: "create:brass_ingot",
 			x: 0.0d,
-			y: -4.0d,
+			y: -2.0d,
+			subtitle: "Time to grease them elbows!",
+			description: ["Unlocks brass related Create recipes!"],
 			dependencies: ["314DF3F9ED665D5D"],
 			id: "3CDA1BC521483915",
 			tasks: [{
 				id: "160DDC4141B52DAD",
 				type: "item",
 				item: "contenttweaker:cubecake_slice",
+				count: 2L,
 				consume_items: true
 			}],
 			rewards: [{
 				id: "1D158B2A295F2DBD",
 				type: "gamestage",
+				title: "Engineering III",
+				icon: "create:wrench",
 				auto: "invisible",
 				stage: "engineeriii"
+			}]
+		},
+		{
+			title: "Engineering IV",
+			icon: {
+				id: "create:chromatic_compound",
+				Count: 1b,
+				tag: {}
+			},
+			x: 0.0d,
+			y: -4.0d,
+			subtitle: "Time to grease them elbows!",
+			description: ["Unlocks Create gear!"],
+			dependencies: ["3CDA1BC521483915"],
+			id: "22E5C9B841257561",
+			tasks: [{
+				id: "42EB028522B10226",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "2463EFBA16297EC6",
+				type: "gamestage",
+				title: "Engineering IV",
+				icon: "create:wrench",
+				auto: "invisible",
+				stage: "engineeriv"
+			}]
+		},
+		{
+			title: "Chef I",
+			icon: "minecraft:smoker",
+			x: -2.0d,
+			y: 2.0d,
+			subtitle: "Let's turn up the heat!",
+			description: ["Unlocks the smoker and cutting board!"],
+			id: "7CCCBE9F3A21D8A9",
+			tasks: [{
+				id: "7F96349395212B32",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "68649A1A8726E33E",
+				type: "gamestage",
+				title: "Chef I",
+				icon: {
+					id: "farmersdelight:iron_knife",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				},
+				auto: "invisible",
+				stage: "chefi"
+			}]
+		},
+		{
+			title: "Chef II",
+			icon: "farmersdelight:cooking_pot",
+			x: -2.0d,
+			y: 0.0d,
+			subtitle: "Let's turn up the heat!",
+			description: ["Unlocks the stove and cooking pot!"],
+			dependencies: ["7CCCBE9F3A21D8A9"],
+			id: "45148E7537F38CEE",
+			tasks: [{
+				id: "3DBC2C02E18B4745",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "7071C13D1231EF6E",
+				type: "gamestage",
+				title: "Chef II",
+				icon: {
+					id: "farmersdelight:iron_knife",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				},
+				auto: "invisible",
+				stage: "chefii"
+			}]
+		},
+		{
+			title: "Hoarder I",
+			icon: "refinedstorage:crafting_grid",
+			x: -2.0d,
+			y: -2.0d,
+			subtitle: "Store ALL the stuff!",
+			description: ["Unlocks the basics for Refined Storage!"],
+			dependencies: ["3CDA1BC521483915"],
+			id: "74E8D5726E128A7B",
+			tasks: [{
+				id: "6BDF15EB1B9F28C3",
+				type: "item",
+				item: "contenttweaker:brass_eye",
+				count: 64L
+			}],
+			rewards: [{
+				id: "0D8C9B2ABDE8FE84",
+				type: "gamestage",
+				title: "Hoarder I",
+				icon: "refinedstorage:1k_storage_block",
+				auto: "invisible",
+				stage: "hoarderi"
+			}]
+		},
+		{
+			title: "Hoarder II",
+			icon: "refinedstorage:crafting_grid",
+			x: -2.0d,
+			y: -4.0d,
+			subtitle: "Store ALL the stuff!",
+			description: ["Unlocks more advanced stuff for Refined Storage!"],
+			dependencies: ["74E8D5726E128A7B"],
+			id: "16310493E0A1126D",
+			tasks: [{
+				id: "2F07E3AFB4880899",
+				type: "item",
+				item: "contenttweaker:brass_eye",
+				count: 256L
+			}],
+			rewards: [{
+				id: "21CF70BDCDAEAADB",
+				type: "gamestage",
+				title: "Hoarder II",
+				icon: "refinedstorage:1k_storage_block",
+				auto: "invisible",
+				stage: "hoarderii"
 			}]
 		}
 	]

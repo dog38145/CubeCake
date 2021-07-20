@@ -2,8 +2,12 @@
   "inventory": {
     "0:1": "{id:\"tetra:modular_double\",Count:1b,tag:{\"double/head_left:workable\":1,\"double/basic_handle_material\":\"basic_handle/stick\",\"double/butt_right_material\":\"butt/flint\",\"double/handle\":\"double/basic_handle\",\"double/basic_axe_left_material\":\"basic_axe/flint\",honing_progress:150,\"double/head_left\":\"double/basic_axe_left\",HideFlags:1,\"double/head_right\":\"double/butt_right\",\"double/head_right:workable\":1,id:\"082f7fe5-2fda-43d6-aef7-12236ab3fedb\",Damage:0}}",
     "0:8": "{id:\"sophisticatedbackpacks:backpack\",Count:1b,tag:{inventorySlots:27,upgradeSlots:1,contentsUuid:[I;-1373675530,-743685520,-1257405512,909554744]}}",
+    "0:6": "{id:\"calemiutils:coin_dollar\",Count:4b}",
+    "0:0": "{id:\"farmersdelight:flint_knife\",Count:1b,tag:{Damage:0}}",
+    "0:5": "{id:\"akashictome:tome\",Count:1b}",
+    "0:7": "{id:\"calemiutils:wallet\",Count:1b,tag:{}}",
     "0:2": "{id:\"minecraft:cooked_beef\",Count:12b}",
-    "0:0": "{id:\"farmersdelight:flint_knife\",Count:1b,tag:{Damage:0}}"
+    "0:4": "{id:\"comforts:sleeping_bag_red\",Count:1b}"
   },
   "wipeBlacklist": []
 }

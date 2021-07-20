@@ -1,0 +1,2 @@
+mods.jei.JEI.addInfo(<item:contenttweaker:brass_eye>, ["Used for researching. Requires research Engineering III"]);
+mods.jei.JEI.addInfo(<item:contenttweaker:brass_ball>, ["Requires research Engineering III"]);
