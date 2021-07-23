@@ -8,3 +8,6 @@ for name in createItems {
     val thing = BracketHandlers.getItem("create:" + name);
     mods.recipestages.Recipes.setRecipeStage("engineeriii", thing);
 }
+
+mods.recipestages.Recipes.setRecipeStage("engineeriii", <item:createaddition:furnace_burner>);
+mods.recipestages.Recipes.setRecipeStage("engineeriii", <item:createaddition:crude_burner>);

@@ -214,6 +214,150 @@
 				auto: "invisible",
 				stage: "hoarderii"
 			}]
+		},
+		{
+			title: "Pack Mule I",
+			icon: "sophisticatedbackpacks:backpack",
+			x: -4.0d,
+			y: -2.0d,
+			subtitle: "Hee haw!",
+			description: ["Unlocks all tiers of backpack up to gold!"],
+			id: "77F937D53E06FD94",
+			tasks: [{
+				id: "3DD0341433EEF05A",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "6B92BE02610C67E0",
+				type: "gamestage",
+				title: "Pack Mule I",
+				icon: "minecraft:leather_horse_armor",
+				auto: "invisible",
+				stage: "packmulei"
+			}]
+		},
+		{
+			title: "Pack Mule II",
+			icon: "sophisticatedbackpacks:backpack",
+			x: -4.0d,
+			y: -4.0d,
+			subtitle: "Hee haw!",
+			description: ["Unlocks all tiers of backpack!"],
+			dependencies: ["77F937D53E06FD94"],
+			id: "2CEB07AA31B0F1B2",
+			tasks: [{
+				id: "47B623C029B5C9E4",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				count: 3L,
+				consume_items: true
+			}],
+			rewards: [{
+				id: "727A8737C4C3DED9",
+				type: "gamestage",
+				title: "Pack Mule II",
+				icon: "minecraft:leather_horse_armor",
+				auto: "invisible",
+				stage: "packmuleii"
+			}]
+		},
+		{
+			title: "Pilot I",
+			icon: {
+				id: "simpleplanes:plane",
+				Count: 1b,
+				tag: {
+					EntityTag: {
+						material: "minecraft:iron_block"
+					}
+				}
+			},
+			x: 2.0d,
+			y: 2.0d,
+			subtitle: "Fly like an eagle.",
+			description: ["Unlocks the plane and everything you need to make it!"],
+			id: "48D9938471A85FBD",
+			tasks: [{
+				id: "639F0179CF999E37",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "1A318358AA8B4A92",
+				type: "gamestage",
+				title: "Pilot I",
+				icon: "simpleplanes:propeller",
+				auto: "invisible",
+				stage: "piloti"
+			}]
+		},
+		{
+			title: "Pilot II",
+			icon: {
+				id: "simpleplanes:plane",
+				Count: 1b,
+				tag: {
+					EntityTag: {
+						material: "minecraft:iron_block"
+					}
+				}
+			},
+			x: 2.0d,
+			y: 0.0d,
+			subtitle: "Fly like an eagle.",
+			description: ["Unlocks the large plane, float, and quick fix kit!"],
+			dependencies: ["48D9938471A85FBD"],
+			id: "6FEB081AD893E850",
+			tasks: [{
+				id: "49BA4831E61F8B01",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				consume_items: true
+			}],
+			rewards: [{
+				id: "77F0C61ABF526F57",
+				type: "gamestage",
+				title: "Pilot II",
+				icon: "simpleplanes:propeller",
+				auto: "invisible",
+				stage: "pilotii"
+			}]
+		},
+		{
+			title: "Pilot III",
+			icon: {
+				id: "simpleplanes:plane",
+				Count: 1b,
+				tag: {
+					EntityTag: {
+						material: "minecraft:iron_block"
+					}
+				}
+			},
+			x: 2.0d,
+			y: -2.0d,
+			subtitle: "Fly like an eagle.",
+			description: ["Unlocks the helicopter and booster!"],
+			dependencies: ["6FEB081AD893E850"],
+			id: "5A0F1866DD25C261",
+			tasks: [{
+				id: "65CC3AB1A5CEE66F",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				count: 2L,
+				consume_items: true
+			}],
+			rewards: [{
+				id: "40CEBB15E9604F66",
+				type: "gamestage",
+				title: "Pilot III",
+				icon: "simpleplanes:propeller",
+				auto: "invisible",
+				stage: "pilotiii"
+			}]
 		}
 	]
 }

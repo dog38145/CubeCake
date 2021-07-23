@@ -1,0 +1,7 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:iron_block",
+		"dustrialdecor:rusty_iron_block"
+    ]
+}

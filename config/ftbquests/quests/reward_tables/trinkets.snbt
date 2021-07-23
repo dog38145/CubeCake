@@ -36,6 +36,13 @@
 		},
 		{
 			item: "losttrinkets:tha_ghost"
+		},
+		{
+			item: "losttrinkets:warm_void",
+			weight: 3
+		},
+		{
+			item: "losttrinkets:piggy"
 		}
 	]
 }

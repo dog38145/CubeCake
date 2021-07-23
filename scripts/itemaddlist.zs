@@ -13,6 +13,6 @@ new ItemBuilder().build("raw_gold");
 new BlockBuilder().withHarvestTool(<tooltype:pickaxe>).withHarvestLevel(1).withHardnessAndResistance(5f, 6f).build("raw_copper_block");
 new BlockBuilder().withHarvestTool(<tooltype:pickaxe>).withHarvestLevel(1).withHardnessAndResistance(5f, 6f).build("raw_iron_block");
 new BlockBuilder().withHarvestTool(<tooltype:pickaxe>).withHarvestLevel(2).withHardnessAndResistance(5f, 6f).build("raw_gold_block");
-
+new BlockBuilder().withHarvestTool(<tooltype:shovel>).withHarvestLevel(1).withHardnessAndResistance(1f, 1f).build("cubecake_block");
 
 

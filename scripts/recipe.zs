@@ -1,3 +1,5 @@
+import crafttweaker.api.BracketHandlers;
+
 craftingTable.removeRecipe(<item:calemiutils:blender>);
 craftingTable.removeRecipe(<item:calemiutils:raritanium>);
 craftingTable.removeByRegex(".*knob.*");
@@ -8,16 +10,22 @@ craftingTable.removeRecipe(<item:calemiutils:pencil>);
 craftingTable.removeRecipe(<item:calemiutils:link_book_location>);
 craftingTable.removeRecipe(<item:calemiutils:blueprint_filler>);
 
-craftingTable.removeByModid("simpleplanes");
-
 craftingTable.removeByModid("refinedstorage");
 furnace.removeByModid("refinedstorage");
 
 craftingTable.removeRecipe(<item:mermaidtail:deep_sea_necklace>);
 craftingTable.removeRecipe(<item:mermaidtail:glowing_deep_sea_necklace>);
 
-<recipetype:create:crushing>.removeRecipe(<item:createaddition:diamond_grit>);
 <recipetype:create:crushing>.removeRecipe(<item:minecraft:diamond>);
+
+var createadditionItems = ["electric_motor", "alternator", "charger", "spool", "copper_spool", "gold_spool", "connector", "capacitor", "rolling_mill", "heater", "multimeter", "gold_wire", "iron_wire", "copper_wire", "copper_rod", "iron_rod", "gold_rod", "brass_rod", "accumulator", "creative_energy", "overcharged_alloy", "charging_chromatic_compound", "overcharged_hammer"];
+for name in createadditionItems {
+    val thing = BracketHandlers.getItem("createaddition:" + name);
+    craftingTable.removeRecipe(thing);
+}
+
+<recipetype:create:pressing>.removeRecipe(<item:createaddition:zinc_sheet>);
+
 
 <recipetype:create:crushing>.addRecipe("diamond_crushing", [<item:minecraft:diamond> * 2, <item:minecraft:diamond> % 50, <item:refinedstorage:silicon>, <item:refinedstorage:silicon> % 10], <item:minecraft:diamond_ore>);
 

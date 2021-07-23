@@ -1,0 +1,47 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "cubecakemachines:ore_processor",
+	"time": 20,
+	"requirements": [{
+			"type": "custommachinery:item",
+			"slot": "input",
+			"mode": "input",
+			"item": "contenttweaker:raw_copper",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"slot": "output",
+			"mode": "output",
+			"item": "create:copper_ingot",
+			"amount": 2
+		},
+		{
+			"type": "custommachinery:item",
+			"slot": "output",
+			"mode": "output",
+			"item": "create:copper_ingot",
+			"amount": 1,
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:structure",
+			"pattern": [
+				[
+					"sssss",
+					"s   s",
+					"s   s",
+					"s   s",
+					"sssss",
+					"  m  "
+				]
+			],
+			"keys": {
+				"s": "minecraft:stone"
+			}
+
+		}
+
+	]
+
+}
