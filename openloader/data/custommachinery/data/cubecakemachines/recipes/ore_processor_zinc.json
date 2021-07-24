@@ -6,21 +6,47 @@
 			"type": "custommachinery:item",
 			"slot": "input",
 			"mode": "input",
-			"item": "create:crushed_copper_ore",
+			"item": "create:crushed_zinc_ore",
 			"amount": 1
 		},
 		{
 			"type": "custommachinery:item",
 			"slot": "output",
 			"mode": "output",
-			"item": "contenttweaker:copper_dust",
+			"item": "contenttweaker:zinc_dust",
 			"amount": 2
 		},
 		{
 			"type": "custommachinery:item",
 			"slot": "output",
 			"mode": "output",
-			"item": "contenttweaker:copper_dust",
+			"item": "contenttweaker:zinc_dust",
+			"amount": 1,
+			"chance": 0.5
+		},
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "cubecakemachines:ore_processor",
+	"time": 20,
+	"requirements": [{
+			"type": "custommachinery:item",
+			"slot": "input",
+			"mode": "input",
+			"item": "create:crushed_brass",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"slot": "output",
+			"mode": "output",
+			"item": "contenttweaker:brass_dust",
+			"amount": 2
+		},
+		{
+			"type": "custommachinery:item",
+			"slot": "output",
+			"mode": "output",
+			"item": "contenttweaker:brass_dust",
 			"amount": 1,
 			"chance": 0.5
 		},
@@ -28,7 +54,7 @@
 			"type": "custommachinery:structure",
 			"pattern": [
 				[
-	                "aaaaa",
+					"aaaaa",
 					"aaaaa",
 					"aaaaa",
 					"aaaaa",
@@ -54,9 +80,9 @@
 				"c": "create:crushing_wheel",
 				"s": "create:shadow_steel_casing"
 			}
-
 		}
-
 	]
-
+}
+      }
+   ]
 }

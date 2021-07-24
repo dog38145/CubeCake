@@ -1,3 +1,6 @@
 {
-	chapter_groups: []
+	chapter_groups: [{
+		id: "42A6EB9D3015AD5C",
+		title: "Specialization"
+	}]
 }

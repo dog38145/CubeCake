@@ -62,5 +62,5 @@
 	#determines if noodle caves should generate.
 	generateNoodleCaves = true
 	#determines if ore veins should generate.
-	generateOreVeins = true
+	generateOreVeins = false
 

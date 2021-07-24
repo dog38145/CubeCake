@@ -1,4 +1,5 @@
 import crafttweaker.api.BracketHandlers;
+import crafttweaker.api.SmithingManager;
 
 craftingTable.removeRecipe(<item:calemiutils:blender>);
 craftingTable.removeRecipe(<item:calemiutils:raritanium>);
@@ -12,6 +13,8 @@ craftingTable.removeRecipe(<item:calemiutils:blueprint_filler>);
 
 craftingTable.removeByModid("refinedstorage");
 furnace.removeByModid("refinedstorage");
+
+smithing.removeByModid("minecraft");
 
 craftingTable.removeRecipe(<item:mermaidtail:deep_sea_necklace>);
 craftingTable.removeRecipe(<item:mermaidtail:glowing_deep_sea_necklace>);
@@ -45,3 +48,10 @@ craftingTable.addShaped("creative_flight", <item:losttrinkets:magical_feathers>,
    [<item:minecraft:feather>, <item:minecraft:elytra>, <item:minecraft:feather>],
    [<item:minecraft:feather>, <item:curios:ring>, <item:minecraft:feather>],
    [<item:minecraft:feather>, <item:minecraft:potion>.withTag({Potion: "minecraft:long_slow_falling" as string}), <item:minecraft:feather>,]]); 
+   
+craftingTable.addShapeless("deepslate", <item:quark:cobbled_deepslate> * 3, [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <item:minecraft:black_dye>]);
+
+craftingTable.addShaped("ore_processor", <item:custommachinery:custom_machine_item>.withTag({machine: "cubecakemachines:ore_processor" as string}), [
+   [<item:minecraft:air>, <item:create:shadow_steel_casing>, <item:minecraft:air>],
+   [<item:create:shadow_steel_casing>, <item:contenttweaker:brass_eye>, <item:create:shadow_steel_casing>],
+   [<item:minecraft:air>, <item:create:shadow_steel_casing>, <item:minecraft:air>,]]); 

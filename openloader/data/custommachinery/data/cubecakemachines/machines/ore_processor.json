@@ -8,8 +8,6 @@
     {
       "mode": "input",
       "id": "input",
-	  "filter": ["contenttweaker:raw_copper", "contenttweaker:raw_iron", "contenttweaker:raw_gold"],
-	  "whitelist": true,
       "type": "custommachinery:item"
     },
     {

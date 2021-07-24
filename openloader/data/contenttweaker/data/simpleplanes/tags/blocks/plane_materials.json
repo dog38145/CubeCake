@@ -2,6 +2,7 @@
     "replace": true,
     "values": [
         "minecraft:iron_block",
-		"dustrialdecor:rusty_iron_block"
+		"dustrial_decor:rusty_iron_block",
+		"quark:iron_plate"
     ]
 }

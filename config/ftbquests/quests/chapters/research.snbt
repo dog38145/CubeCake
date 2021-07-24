@@ -114,7 +114,7 @@
 			x: -2.0d,
 			y: 2.0d,
 			subtitle: "Let's turn up the heat!",
-			description: ["Unlocks the smoker and cutting board!"],
+			description: ["Unlocks the smoker, blast furnace, and cutting board!"],
 			id: "7CCCBE9F3A21D8A9",
 			tasks: [{
 				id: "7F96349395212B32",
@@ -143,7 +143,7 @@
 			x: -2.0d,
 			y: 0.0d,
 			subtitle: "Let's turn up the heat!",
-			description: ["Unlocks the stove and cooking pot!"],
+			description: ["Unlocks the stove, furnace mk2, and cooking pot!"],
 			dependencies: ["7CCCBE9F3A21D8A9"],
 			id: "45148E7537F38CEE",
 			tasks: [{
@@ -357,6 +357,36 @@
 				icon: "simpleplanes:propeller",
 				auto: "invisible",
 				stage: "pilotiii"
+			}]
+		},
+		{
+			title: "Engineering V",
+			icon: {
+				id: "custommachinery:custom_machine_item",
+				Count: 1b,
+				tag: {
+					machine: "cubecakemachines:ore_processor"
+				}
+			},
+			x: 2.0d,
+			y: -4.0d,
+			subtitle: "Time to grease them elbows!",
+			description: ["Unlocks the Ore Processor!"],
+			dependencies: ["22E5C9B841257561"],
+			id: "1C738651491F6E09",
+			tasks: [{
+				id: "76861470F5DDFC58",
+				type: "item",
+				item: "contenttweaker:cubecake_slice",
+				count: 2L
+			}],
+			rewards: [{
+				id: "7CD1D9FD20E7922A",
+				type: "gamestage",
+				title: "Engineering V",
+				icon: "create:wrench",
+				auto: "invisible",
+				stage: "engineerv"
 			}]
 		}
 	]

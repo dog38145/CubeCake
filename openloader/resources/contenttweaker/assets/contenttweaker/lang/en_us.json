@@ -7,5 +7,10 @@
 "item.contenttweaker.raw_gold": "Raw Gold",
 "block.contenttweaker.raw_copper_block": "Block of Raw Copper",
 "block.contenttweaker.raw_iron_block": "Block of Raw Iron",
-"block.contenttweaker.raw_gold_block": "Block of Raw Gold"
+"block.contenttweaker.raw_gold_block": "Block of Raw Gold",
+"item.contenttweaker.gold_dust": "Gold Dust",
+"item.contenttweaker.iron_dust": "Iron Dust",
+"item.contenttweaker.copper_dust": "Copper Dust",
+"item.contenttweaker.zinc_dust": "Zinc Dust",
+"item.contenttweaker.brass_dust": "Brass Dust"
 }
