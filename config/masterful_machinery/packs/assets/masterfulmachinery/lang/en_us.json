@@ -1,0 +1,15 @@
+{
+  "block.masterfulmachinery.basiccontroller_basicfluid_port_fluids_input": "Basic - Fluid Input Port",
+  "block.masterfulmachinery.basiccontroller_basicfluid_port_fluids_output": "Basic - Fluid Output Port",
+  "block.masterfulmachinery.basiccontroller_basicitem_port_items_input": "Basic - Item Input Port",
+  "block.masterfulmachinery.basiccontroller_basicitem_port_items_output": "Basic - Item Output Port",
+  "block.masterfulmachinery.basiccontroller_basicrotationalenergy_port_create_rotation_input": "Basic - Rotational Energy Input Port",
+  "block.masterfulmachinery.basiccontroller_basicrotationalenergy_port_create_rotation_output": "Basic - Rotational Energy Output Port",
+  "block.masterfulmachinery.basiccontroller_controller": "Basic Controller",
+  "block.masterfulmachinery.projector": "Structure Projector",
+  "block.masterfulmachinery.structure_generator": "Structure Scanner",
+  "container.masterfulmachinery.basiccontroller_controller.name": "Basic Controller",
+  "container.masterfulmachinery.create_rotation": "Rotation Port",
+  "item.masterfulmachinery.blueprint": "Blueprint",
+  "item.masterfulmachinery.structure_gen_device": "Structure Scanner"
+}

@@ -1,0 +1,31 @@
+{
+  "controllerId": "basiccontroller",
+  "name": "Basic",
+  "ports": [
+    {
+      "type": "masterfulmachinery:items",
+      "name": "Item",
+      "id": "basicitem",
+      "data": {
+        "rows": 1,
+        "columns": 1
+      }
+    },
+    {
+      "type": "masterfulmachinery:create_rotation",
+      "name": "Rotational Energy",
+      "id": "basicrotationalenergy",
+      "data": {
+        "stress": 256
+      }
+    },
+	{
+	  "type": "masterfulmachinery:fluids",
+	  "name": "Fluid",
+	  "id": "basicfluid",
+	  "data": {
+	      "capacity": 16000
+	  }
+	}
+  ]
+}

@@ -12,3 +12,5 @@ mods.recipestages.Recipes.setRecipeStage("engineeri", <item:creategears:gear>);
 mods.recipestages.Recipes.setRecipeStage("engineeri", <item:creategears:large_gear>);
 mods.recipestages.Recipes.setRecipeStage("engineeri", <item:creategears:fully_encased_chain_drive>);
 mods.recipestages.Recipes.setRecipeStage("engineeri", <item:creategears:simple_gearshift>);
+mods.recipestages.Recipes.setRecipeStage("engineeri", <item:creategears:half_shaft_gear>);
+mods.recipestages.Recipes.setRecipeStage("engineeri", <item:creategears:large_half_shaft_gear>);

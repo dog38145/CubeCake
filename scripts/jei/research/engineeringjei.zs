@@ -31,4 +31,3 @@ for name in createItemsIV {
 
 mods.jei.JEI.addInfo(<item:createaddition:crude_burner>, ["Requires research Engineering III."]);
 mods.jei.JEI.addInfo(<item:createaddition:furnace_burner>, ["Requires research Engineering III."]);
-mods.jei.JEI.addInfo(<item:custommachinery:custom_machine_item>.withTag({machine: "cubecakemachines:ore_processor" as string}), ["Requires research Engineering V."]);
