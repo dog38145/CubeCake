@@ -1,48 +1,20 @@
 {
-	id: "0A400682D3F775B1",
-	order_index: 0,
-	title: "Trinkets",
-	icon: "losttrinkets:treasure_bag",
-	loot_size: 1,
+	id: "0A400682D3F775B1"
+	order_index: 0
+	title: "Trinkets"
+	icon: "losttrinkets:treasure_bag"
+	loot_size: 1
 	rewards: [
-		{
-			item: "losttrinkets:creepo",
-			weight: 5
-		},
-		{
-			item: "losttrinkets:slingshot",
-			weight: 5
-		},
-		{
-			item: "losttrinkets:turtle_shell",
-			weight: 3
-		},
-		{
-			item: "losttrinkets:tha_golem",
-			weight: 3
-		},
-		{
-			item: "losttrinkets:golden_swatter",
-			weight: 3
-		},
-		{
-			item: "losttrinkets:tha_bat"
-		},
-		{
-			item: "losttrinkets:tha_spider"
-		},
-		{
-			item: "losttrinkets:tha_spirit"
-		},
-		{
-			item: "losttrinkets:tha_ghost"
-		},
-		{
-			item: "losttrinkets:warm_void",
-			weight: 3
-		},
-		{
-			item: "losttrinkets:piggy"
-		}
+		{ item: "losttrinkets:creepo", weight: 5 }
+		{ item: "losttrinkets:slingshot", weight: 5 }
+		{ item: "losttrinkets:turtle_shell", weight: 3 }
+		{ item: "losttrinkets:tha_golem", weight: 3 }
+		{ item: "losttrinkets:golden_swatter", weight: 3 }
+		{ item: "losttrinkets:tha_bat" }
+		{ item: "losttrinkets:tha_spider" }
+		{ item: "losttrinkets:tha_spirit" }
+		{ item: "losttrinkets:tha_ghost" }
+		{ item: "losttrinkets:warm_void", weight: 3 }
+		{ item: "losttrinkets:piggy" }
 	]
 }

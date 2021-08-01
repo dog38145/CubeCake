@@ -1,659 +1,658 @@
 {
-	id: "13B41B9BE296B451",
-	group: "",
-	order_index: 0,
-	filename: "quests",
-	title: "Quests",
-	icon: "ftbquests:book",
-	default_quest_shape: "",
+	id: "13B41B9BE296B451"
+	group: ""
+	order_index: 0
+	filename: "quests"
+	title: "Quests"
+	icon: "ftbquests:book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Welcome to the Kitchen!",
-			icon: "minecraft:crafting_table",
-			x: 0.0d,
-			y: 0.0d,
-			shape: "rsquare",
-			subtitle: "We've got fun and games.",
-			description: ["Tetra tools are the only way to make tools - vanilla tools have one durability no matter the material. Nobody wants a fragile knife!"],
-			size: 1.5d,
-			id: "5F7EA962BE17C46F",
+			title: "Welcome to the Kitchen!"
+			icon: "minecraft:crafting_table"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "We've got fun and games."
+			description: ["Tetra tools are the only way to make tools - vanilla tools have one durability no matter the material. Nobody wants a fragile knife!"]
+			size: 1.5d
+			id: "5F7EA962BE17C46F"
 			tasks: [
 				{
-					id: "6660032522917475",
-					type: "item",
+					id: "6660032522917475"
+					type: "item"
 					item: "minecraft:crafting_table"
-				},
+				}
 				{
-					id: "227C644BF6F9BD11",
-					type: "item",
+					id: "227C644BF6F9BD11"
+					type: "item"
 					item: {
-						id: "tetra:modular_double",
-						Count: 1b,
+						id: "tetra:modular_double"
+						Count: 1b
 						tag: {
-							"double/handle": "double/basic_handle",
-							"double/head_left": "double/basic_hammer_left",
-							"double/head_right": "double/basic_hammer_right",
-							id: "3658845d-d84e-4999-aca0-82ec0dc9e684",
-							"double/basic_hammer_right_material": "basic_hammer/oak",
-							Damage: 0,
-							"double/basic_handle_material": "basic_handle/stick",
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "3658845d-d84e-4999-aca0-82ec0dc9e684"
+							"double/basic_hammer_right_material": "basic_hammer/oak"
+							Damage: 0
+							"double/basic_handle_material": "basic_handle/stick"
 							"double/basic_hammer_left_material": "basic_hammer/oak"
 						}
 					}
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "396750D7C5C0E34F",
-					type: "item",
-					item: "contenttweaker:cubecake_slice"
-				},
-				{
-					id: "3A04973B1214AA5B",
-					type: "loot",
+					id: "3A04973B1214AA5B"
+					type: "loot"
 					table_id: 738597497860486577L
 				}
+				{
+					id: "3A5AB7240D1DDC54"
+					type: "item"
+					item: "kubejs:cubecake_slice"
+				}
 			]
-		},
+		}
 		{
-			title: "Encrusted Goodies",
-			x: 2.0d,
-			y: 0.0d,
-			subtitle: "Stone baked.",
-			description: ["You find geodes from special stone deep underground or from processing gravel. Crack open one of these bad boys for a chance to get a rare mineral!"],
-			dependencies: ["5F7EA962BE17C46F"],
-			hide: true,
-			id: "70F0F74F7022071B",
+			title: "Encrusted Goodies"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Stone baked."
+			description: ["You find geodes from special stone deep underground or from processing gravel. Crack open one of these bad boys for a chance to get a rare mineral!"]
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "70F0F74F7022071B"
 			tasks: [{
-				id: "6D2D1CFA28F52C01",
-				type: "item",
+				id: "6D2D1CFA28F52C01"
+				type: "item"
 				item: "tetra:geode"
-			}],
-			rewards: [{
-				id: "372DA0CA7883EC83",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "5E33B66626588742"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Breaking the Crust",
-			icon: "tetra:pristine_diamond",
-			x: 4.5d,
-			y: 0.0d,
-			subtitle: "A geologist chiropractitioner.",
-			description: ["Geodes are affected by luck and fortune! Pristine gems are basically just their normal counterpart but better."],
-			dependencies: ["70F0F74F7022071B"],
-			hide: true,
-			size: 1.125d,
-			id: "2AC83CA913638759",
+			title: "Breaking the Crust"
+			icon: "tetra:pristine_diamond"
+			x: 4.5d
+			y: 0.0d
+			subtitle: "A geologist chiropractitioner."
+			description: ["Geodes are affected by luck and fortune! Pristine gems are basically just their normal counterpart but better."]
+			dependencies: ["70F0F74F7022071B"]
+			hide: true
+			size: 1.125d
+			id: "2AC83CA913638759"
 			tasks: [
 				{
-					id: "78E869FC52629A16",
-					type: "item",
+					id: "78E869FC52629A16"
+					type: "item"
 					item: "tetra:pristine_diamond"
-				},
+				}
 				{
-					id: "6E29BFF89CE0FD07",
-					type: "item",
+					id: "6E29BFF89CE0FD07"
+					type: "item"
 					item: "tetra:pristine_emerald"
-				},
+				}
 				{
-					id: "574A70A11C4617CE",
-					type: "item",
+					id: "574A70A11C4617CE"
+					type: "item"
 					item: "tetra:pristine_lapis"
 				}
-			],
+			]
 			rewards: [{
-				id: "4B6B108FDAB95FE7",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
+				id: "1E49E056BF074801"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 			}]
-		},
+		}
 		{
-			title: "Convection Smithing",
-			x: 4.0d,
-			y: 1.5d,
-			subtitle: "More bonk for your buck!",
-			description: ["Combustion chambers make forge hammers bonk harder for those extra tough minerals!"],
-			dependencies: ["70F0F74F7022071B"],
-			hide: true,
-			id: "627F5CDC6405D21E",
+			title: "Convection Smithing"
+			x: 4.0d
+			y: 1.5d
+			subtitle: "More bonk for your buck!"
+			description: ["Combustion chambers make forge hammers bonk harder for those extra tough minerals!"]
+			dependencies: ["70F0F74F7022071B"]
+			hide: true
+			id: "627F5CDC6405D21E"
 			tasks: [{
-				id: "5224C5A28E851618",
-				type: "item",
-				item: "tetra:combustion_chamber",
+				id: "5224C5A28E851618"
+				type: "item"
+				item: "tetra:combustion_chamber"
 				count: 2L
-			}],
-			rewards: [{
-				id: "496C7DD4D26B27F9",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "436E25C0CF930004"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Heat to 450 °F",
-			x: 4.0d,
-			y: -1.5d,
-			subtitle: "Fuel enriched.",
-			description: ["Who needs electricity when you can use the power of lava?"],
-			dependencies: ["70F0F74F7022071B"],
-			hide: true,
-			id: "5335C9DDF534EB07",
+			title: "Heat to 450 °F"
+			x: 4.0d
+			y: -1.5d
+			subtitle: "Fuel enriched."
+			description: ["Who needs electricity when you can use the power of lava?"]
+			dependencies: ["70F0F74F7022071B"]
+			hide: true
+			id: "5335C9DDF534EB07"
 			tasks: [{
-				id: "1423E3F256EB6615",
-				type: "item",
+				id: "1423E3F256EB6615"
+				type: "item"
 				item: {
-					id: "tetra:magmatic_cell",
-					Count: 1b,
+					id: "tetra:magmatic_cell"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
-			}],
-			rewards: [{
-				id: "4A4A49F3D4C399A5",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "0AB6A96927D0FF8F"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Ancient Recipes",
-			x: 7.5d,
-			y: 0.0d,
-			subtitle: "Clank!",
-			description: ["The forge hammer is the heart of any good tool: it has the power to forge modules out of even the rarest and hardest materials."],
+			title: "Ancient Recipes"
+			x: 7.5d
+			y: 0.0d
+			subtitle: "Clank!"
+			description: ["The forge hammer is the heart of any good tool: it has the power to forge modules out of even the rarest and hardest materials."]
 			dependencies: [
-				"627F5CDC6405D21E",
+				"627F5CDC6405D21E"
 				"5335C9DDF534EB07"
-			],
-			hide: true,
-			size: 1.5d,
-			id: "5C61ACE4FD992AEF",
+			]
+			hide: true
+			size: 1.5d
+			id: "5C61ACE4FD992AEF"
 			tasks: [{
-				id: "3448B7869ED18175",
-				type: "advancement",
-				title: "Use a forge hammer to make a tier 5+ module.",
-				icon: "tetra:hammer_base",
-				advancement: "tetra:spelunking/hammer_craft",
+				id: "3448B7869ED18175"
+				type: "advancement"
+				title: "Use a forge hammer to make a tier 5+ module."
+				icon: "tetra:hammer_base"
+				advancement: "tetra:spelunking/hammer_craft"
 				criterion: ""
-			}],
+			}]
 			rewards: [
 				{
-					id: "1A92EA3BEABC5B29",
-					type: "item",
-					item: "contenttweaker:cubecake_slice"
-				},
-				{
-					id: "1F75B7BB5EFE656F",
-					type: "loot",
+					id: "1F75B7BB5EFE656F"
+					type: "loot"
 					table_id: 738597497860486577L
 				}
+				{
+					id: "2EFF74941F0A6FE8"
+					type: "item"
+					item: "kubejs:cubecake_slice"
+				}
 			]
-		},
+		}
 		{
-			title: '"Stainless Steel"',
-			x: -2.0d,
-			y: 0.0d,
-			subtitle: "Its not steel and it definitely stains.",
-			description: ["Ah, iron. Makes a great budget material for baking equipment!"],
-			dependencies: ["5F7EA962BE17C46F"],
-			hide: true,
-			id: "72B141CE6390185A",
+			title: "\"Stainless Steel\""
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Its not steel and it definitely stains."
+			description: ["Ah, iron. Makes a great budget material for baking equipment!"]
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "72B141CE6390185A"
 			tasks: [{
-				id: "22BC8A3D3DF0D5F0",
-				type: "item",
-				item: "minecraft:iron_ingot",
+				id: "22BC8A3D3DF0D5F0"
+				type: "item"
+				item: "minecraft:iron_ingot"
 				count: 16L
-			}],
-			rewards: [{
-				id: "55E232229BB59A84",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "508EED73AF923CA3"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Rock Candy",
-			x: -4.5d,
-			y: 0.0d,
-			subtitle: "Shine bright.",
-			description: ["Might break your teeth but it's so hard it makes a good tool material!"],
-			dependencies: ["72B141CE6390185A"],
-			id: "03168CB23BCF441B",
+			title: "Rock Candy"
+			x: -4.5d
+			y: 0.0d
+			subtitle: "Shine bright."
+			description: ["Might break your teeth but it's so hard it makes a good tool material!"]
+			dependencies: ["72B141CE6390185A"]
+			id: "03168CB23BCF441B"
 			tasks: [{
-				id: "5F8C7343C77EA9D2",
-				type: "item",
+				id: "5F8C7343C77EA9D2"
+				type: "item"
 				item: "minecraft:diamond"
-			}],
-			rewards: [{
-				id: "1A8B90A863C909EE",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "6344B3207BEA2C8C"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Silica Pearls",
-			x: -4.0d,
-			y: -1.5d,
-			subtitle: "Almost safe for throwing.",
-			description: ["These special pearls have the ability to manipulate space-time itself! I wonder what would happen if you mixed them with blaze powder..."],
-			dependencies: ["72B141CE6390185A"],
-			id: "6F07A366C2D6F3F5",
+			title: "Silica Pearls"
+			x: -4.0d
+			y: -1.5d
+			subtitle: "Almost safe for throwing."
+			description: ["These special pearls have the ability to manipulate space-time itself! I wonder what would happen if you mixed them with blaze powder..."]
+			dependencies: ["72B141CE6390185A"]
+			id: "6F07A366C2D6F3F5"
 			tasks: [{
-				id: "47956244940786B5",
-				type: "item",
-				item: "minecraft:ender_pearl",
+				id: "47956244940786B5"
+				type: "item"
+				item: "minecraft:ender_pearl"
 				count: 16L
-			}],
-			rewards: [{
-				id: "6E0BA9A821DDE367",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "7CEB1FADEF77209C"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Baking Powder",
-			x: -4.0d,
-			y: 1.5d,
-			subtitle: "Do not consume.",
-			description: ["Highly flammable, but great for making stuff rise. Try not to eat it."],
-			dependencies: ["72B141CE6390185A"],
-			id: "4289AD573AE17D88",
+			title: "Baking Powder"
+			x: -4.0d
+			y: 1.5d
+			subtitle: "Do not consume."
+			description: ["Highly flammable, but great for making stuff rise. Try not to eat it."]
+			dependencies: ["72B141CE6390185A"]
+			id: "4289AD573AE17D88"
 			tasks: [{
-				id: "5FB3942FF6043675",
-				type: "item",
-				item: "minecraft:blaze_powder",
+				id: "5FB3942FF6043675"
+				type: "item"
+				item: "minecraft:blaze_powder"
 				count: 16L
-			}],
-			rewards: [{
-				id: "292BE78B4EBC0102",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "3DAF0C2DF4066CE1"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Reclaiming the Bakery",
-			x: -7.5d,
-			y: 0.0d,
-			shape: "rsquare",
-			subtitle: "Add one cracked egg.",
-			description: ["Who's this jerk? I bet you could make a killer meal out of her egg!"],
+			title: "Reclaiming the Bakery"
+			x: -7.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Add one cracked egg."
+			description: ["Who's this jerk? I bet you could make a killer meal out of her egg!"]
 			dependencies: [
-				"4289AD573AE17D88",
+				"4289AD573AE17D88"
 				"6F07A366C2D6F3F5"
-			],
-			size: 1.5d,
-			id: "5EF31B22588908A4",
+			]
+			size: 1.5d
+			id: "5EF31B22588908A4"
 			tasks: [{
-				id: "5A8AC49804D2C719",
-				type: "advancement",
-				title: "Defeat the ender dragon!",
-				icon: "minecraft:dragon_egg",
-				advancement: "minecraft:end/kill_dragon",
+				id: "5A8AC49804D2C719"
+				type: "advancement"
+				title: "Defeat the ender dragon!"
+				icon: "minecraft:dragon_egg"
+				advancement: "minecraft:end/kill_dragon"
 				criterion: ""
-			}],
+			}]
 			rewards: [
 				{
-					id: "305376B00C3D9EF5",
-					type: "item",
-					item: "contenttweaker:cubecake_slice"
-				},
-				{
-					id: "2A28246F4609E718",
-					type: "loot",
+					id: "2A28246F4609E718"
+					type: "loot"
 					table_id: 738597497860486577L
 				}
+				{
+					id: "6965707276E88778"
+					type: "item"
+					item: "kubejs:cubecake_slice"
+				}
 			]
-		},
+		}
 		{
-			title: "Powering Up",
-			icon: "create:water_wheel",
-			x: 0.0d,
-			y: -2.0d,
-			subtitle: "It's easier to bake when you've got something to do it for you!",
-			dependencies: ["5F7EA962BE17C46F"],
-			id: "111122B16638485A",
+			title: "Powering Up"
+			icon: "create:water_wheel"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "It's easier to bake when you've got something to do it for you!"
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "111122B16638485A"
 			tasks: [
 				{
-					id: "593DD0F21835820F",
-					type: "item",
+					id: "593DD0F21835820F"
+					type: "item"
 					item: "create:water_wheel"
-				},
+				}
 				{
-					id: "284D5FD9FA5F7BCD",
-					type: "item",
+					id: "284D5FD9FA5F7BCD"
+					type: "item"
 					item: "create:mechanical_press"
 				}
-			],
+			]
 			rewards: [{
-				id: "7A9913F834757A95",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
+				id: "41F681A87F655D6F"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 			}]
-		},
+		}
 		{
-			title: "A Gentle Breeze",
-			x: 0.0d,
-			y: -4.5d,
-			subtitle: "A little wind makes cooling your baking so much faster!",
-			description: [""],
-			dependencies: ["111122B16638485A"],
-			id: "3AE883CBDA68C819",
+			title: "A Gentle Breeze"
+			x: 0.0d
+			y: -4.5d
+			subtitle: "A little wind makes cooling your baking so much faster!"
+			description: [""]
+			dependencies: ["111122B16638485A"]
+			id: "3AE883CBDA68C819"
 			tasks: [{
-				id: "24B164ADDF5F03B6",
-				type: "item",
+				id: "24B164ADDF5F03B6"
+				type: "item"
 				item: "create:encased_fan"
-			}],
-			rewards: [{
-				id: "2E3893526C1CC876",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "61D7CC035D95186C"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "High Effeciency Processing",
-			x: 0.0d,
-			y: -7.0d,
-			shape: "rsquare",
-			subtitle: "Get more calorie for your buck!",
+			title: "High Effeciency Processing"
+			x: 0.0d
+			y: -7.0d
+			shape: "rsquare"
+			subtitle: "Get more calorie for your buck!"
 			dependencies: [
-				"25E4DEDCC9CA5AAF",
+				"25E4DEDCC9CA5AAF"
 				"1377AC37E319C606"
-			],
-			size: 1.5d,
-			id: "434C755B1E3026B2",
+			]
+			size: 1.5d
+			id: "434C755B1E3026B2"
 			tasks: [{
-				id: "7FD43EBC2F71B2FC",
-				type: "item",
+				id: "7FD43EBC2F71B2FC"
+				type: "item"
 				item: {
-					id: "custommachinery:custom_machine_item",
-					Count: 1b,
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
 					tag: {
 						machine: "cubecakemachines:ore_processor"
 					}
 				}
-			}],
+			}]
 			rewards: [
 				{
-					id: "768938623B09D268",
-					type: "item",
-					item: "contenttweaker:cubecake_slice"
-				},
-				{
-					id: "420DAD27FD363CD4",
-					type: "loot",
+					id: "420DAD27FD363CD4"
+					type: "loot"
 					table_id: 738597497860486577L
 				}
+				{
+					id: "0F841B4C7B543922"
+					type: "item"
+					item: "kubejs:cubecake_slice"
+				}
 			]
-		},
+		}
 		{
-			title: "Industrial Combining",
-			x: 1.5d,
-			y: -4.0d,
-			subtitle: "Beat until smooth.",
-			dependencies: ["111122B16638485A"],
-			id: "1377AC37E319C606",
+			title: "Industrial Combining"
+			x: 1.5d
+			y: -4.0d
+			subtitle: "Beat until smooth."
+			dependencies: ["111122B16638485A"]
+			id: "1377AC37E319C606"
 			tasks: [{
-				id: "3E5FECCD44E9E236",
-				type: "item",
+				id: "3E5FECCD44E9E236"
+				type: "item"
 				item: "create:mechanical_mixer"
-			}],
-			rewards: [{
-				id: "416DB51852FFC6DE",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "17340DEA9354E884"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Black Licorice",
-			icon: "create:shadow_steel",
-			x: -1.5d,
-			y: -4.0d,
-			subtitle: "Disgusting.",
-			dependencies: ["111122B16638485A"],
-			id: "25E4DEDCC9CA5AAF",
+			title: "Black Licorice"
+			icon: "create:shadow_steel"
+			x: -1.5d
+			y: -4.0d
+			subtitle: "Disgusting."
+			dependencies: ["111122B16638485A"]
+			id: "25E4DEDCC9CA5AAF"
 			tasks: [{
-				id: "3433A4D548D52031",
-				type: "item",
+				id: "3433A4D548D52031"
+				type: "item"
 				item: "create:shadow_steel"
-			}],
-			rewards: [{
-				id: "445A38ADBC1397B9",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "17E6DBF39839D8A7"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			x: 0.0d,
-			y: 2.5d,
-			subtitle: "Ooh, shiny!",
-			description: ["They look tasty, but they aren't for cooking. Rather, they make cooking easier through magical means!"],
-			dependencies: ["5F7EA962BE17C46F"],
-			id: "02C9ED8E01A555DA",
+			x: 0.0d
+			y: 2.5d
+			subtitle: "Ooh, shiny!"
+			description: ["They look tasty, but they aren't for cooking. Rather, they make cooking easier through magical means!"]
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "02C9ED8E01A555DA"
 			tasks: [{
-				id: "18374B0FA3ABA5A6",
-				type: "item",
+				id: "18374B0FA3ABA5A6"
+				type: "item"
 				item: "ars_nouveau:mana_gem"
-			}],
-			rewards: [{
-				id: "2534D3050D130D98",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "1A2A32F4B5621297"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Magical Cookbook",
-			x: 0.0d,
-			y: 5.0d,
-			subtitle: "Holds only ten recipes.",
-			description: ["Write any recipe you want in this book and it shall become real!"],
-			dependencies: ["02C9ED8E01A555DA"],
-			id: "3DE85A361D085E78",
+			title: "Magical Cookbook"
+			x: 0.0d
+			y: 5.0d
+			subtitle: "Holds only ten recipes."
+			description: ["Write any recipe you want in this book and it shall become real!"]
+			dependencies: ["02C9ED8E01A555DA"]
+			id: "3DE85A361D085E78"
 			tasks: [{
-				id: "29A10EC9255D5D85",
-				type: "item",
+				id: "29A10EC9255D5D85"
+				type: "item"
 				item: {
-					id: "ars_nouveau:archmage_spell_book",
-					Count: 1b,
+					id: "ars_nouveau:archmage_spell_book"
+					Count: 1b
 					tag: {
-						mode: 0,
+						mode: 0
 						spells: ",touch,harm,break,self,projectile"
 					}
 				}
-			}],
-			rewards: [{
-				id: "1B412AB69CDA317A",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "28A538A33F8EA6AC"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Mystical Flora",
-			x: -1.5d,
-			y: 4.5d,
-			subtitle: "Has an enchanting aroma.",
-			description: ["The strings of these flowers are intertwined within any good cook's robes."],
-			dependencies: ["02C9ED8E01A555DA"],
-			id: "13710E2552802245",
+			title: "Mystical Flora"
+			x: -1.5d
+			y: 4.5d
+			subtitle: "Has an enchanting aroma."
+			description: ["The strings of these flowers are intertwined within any good cook's robes."]
+			dependencies: ["02C9ED8E01A555DA"]
+			id: "13710E2552802245"
 			tasks: [{
-				id: "677FF0349B89AA6B",
-				type: "item",
-				item: "ars_nouveau:mana_bloom",
+				id: "677FF0349B89AA6B"
+				type: "item"
+				item: "ars_nouveau:mana_bloom"
 				consume_items: false
-			}],
-			rewards: [{
-				id: "5BB4A3792C96B42F",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "1E953B1972AF5BE7"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Magical Bands",
-			x: 1.5d,
-			y: 4.5d,
-			subtitle: "Remove when working with dough.",
-			description: ["This ring allows for faster foraging and mining for ingredients!"],
-			dependencies: ["02C9ED8E01A555DA"],
-			id: "788F3B99FD2B6CA0",
+			title: "Magical Bands"
+			x: 1.5d
+			y: 4.5d
+			subtitle: "Remove when working with dough."
+			description: ["This ring allows for faster foraging and mining for ingredients!"]
+			dependencies: ["02C9ED8E01A555DA"]
+			id: "788F3B99FD2B6CA0"
 			tasks: [{
-				id: "6A863CF7733496BF",
-				type: "item",
+				id: "6A863CF7733496BF"
+				type: "item"
 				item: "curios:ring"
-			}],
-			rewards: [{
-				id: "36960F6C30ABDA12",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
+			rewards: [{
+				id: "63E94909ED3BE42E"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
 		{
-			title: "Baker's New Threads",
+			title: "Baker's New Threads"
 			icon: {
-				id: "ars_nouveau:archmage_robes",
-				Count: 1b,
+				id: "ars_nouveau:archmage_robes"
+				Count: 1b
 				tag: {
 					Damage: 0
 				}
-			},
-			x: 0.0d,
-			y: 8.0d,
-			shape: "rsquare",
-			subtitle: "White? That's a stereotype.",
-			description: ["These mystical clothes do not stain and provide ample protection against burns! Oh, and the feathers let you fly."],
+			}
+			x: 0.0d
+			y: 8.0d
+			shape: "rsquare"
+			subtitle: "White? That's a stereotype."
+			description: ["These mystical clothes do not stain and provide ample protection against burns! Oh, and the feathers let you fly."]
 			dependencies: [
-				"788F3B99FD2B6CA0",
+				"788F3B99FD2B6CA0"
 				"13710E2552802245"
-			],
-			size: 1.5d,
-			id: "7DD83CF254B2334E",
+			]
+			size: 1.5d
+			id: "7DD83CF254B2334E"
 			tasks: [
 				{
-					id: "671410FBDC8E8E8D",
-					type: "item",
+					id: "671410FBDC8E8E8D"
+					type: "item"
 					item: {
-						id: "ars_nouveau:archmage_hood",
-						Count: 1b,
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "0C90940C52B46601",
-					type: "item",
+					id: "0C90940C52B46601"
+					type: "item"
 					item: {
-						id: "ars_nouveau:archmage_robes",
-						Count: 1b,
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "339EF787F06B890C",
-					type: "item",
+					id: "339EF787F06B890C"
+					type: "item"
 					item: {
-						id: "ars_nouveau:archmage_leggings",
-						Count: 1b,
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "217E9D2EC0E1F4AE",
-					type: "item",
+					id: "217E9D2EC0E1F4AE"
+					type: "item"
 					item: {
-						id: "ars_nouveau:archmage_boots",
-						Count: 1b,
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "028D2BF67028FBFE",
-					type: "item",
+					id: "028D2BF67028FBFE"
+					type: "item"
 					item: "losttrinkets:magical_feathers"
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "02EDE2AC1562FEA8",
-					type: "item",
-					item: "contenttweaker:cubecake_slice"
-				},
-				{
-					id: "5BD1D1CD2F266A49",
-					type: "loot",
+					id: "5BD1D1CD2F266A49"
+					type: "loot"
 					table_id: 738597497860486577L
 				}
+				{
+					id: "54DD83FDCA3CC0FF"
+					type: "item"
+					item: "kubejs:cubecake_slice"
+				}
 			]
-		},
+		}
 		{
-			x: -1.5d,
-			y: 1.5d,
-			dependencies: ["5F7EA962BE17C46F"],
-			id: "19ECEB536BB0D816",
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "19ECEB536BB0D816"
 			tasks: [{
-				id: "1678F0EC615B8BBA",
-				type: "item",
-				item: "nethers_delight:roast_hoglin",
+				id: "1678F0EC615B8BBA"
+				type: "item"
+				item: "nethers_delight:roast_hoglin"
 				count: 4L
-			}],
-			rewards: [{
-				id: "04D3468B24F8EC15",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
-		{
-			x: 1.5d,
-			y: 1.5d,
-			dependencies: ["5F7EA962BE17C46F"],
-			id: "12508301037C54AE",
-			tasks: [{
-				id: "7F3352DAA868FD5D",
-				type: "item",
-				item: "farmersdelight:honey_glazed_ham",
-				count: 4L
-			}],
 			rewards: [{
-				id: "3A8E199429C7E93D",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
+				id: "5BCC090B04B1660F"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 			}]
-		},
+		}
 		{
-			x: 1.5d,
-			y: -1.5d,
-			dependencies: ["5F7EA962BE17C46F"],
-			id: "546D6A78AD840871",
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "12508301037C54AE"
 			tasks: [{
-				id: "1BAED70F791531A9",
-				type: "item",
-				item: "farmersdelight:shepherds_pie",
+				id: "7F3352DAA868FD5D"
+				type: "item"
+				item: "farmersdelight:honey_glazed_ham"
 				count: 4L
-			}],
-			rewards: [{
-				id: "16E5BAB1E5367C5A",
-				type: "item",
-				item: "contenttweaker:cubecake_slice"
 			}]
-		},
-		{
-			x: -1.5d,
-			y: -1.5d,
-			dependencies: ["5F7EA962BE17C46F"],
-			id: "7C9E18123F97C342",
-			tasks: [{
-				id: "19AAE4C2688A8AED",
-				type: "item",
-				item: "farmersdelight:roast_chicken",
-				count: 4L
-			}],
 			rewards: [{
-				id: "438829BFCDC41A1E",
-				type: "item",
+				id: "3D8641B110126CE4"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "546D6A78AD840871"
+			tasks: [{
+				id: "1BAED70F791531A9"
+				type: "item"
+				item: "farmersdelight:shepherds_pie"
+				count: 4L
+			}]
+			rewards: [{
+				id: "1B9353163F3E393C"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["5F7EA962BE17C46F"]
+			id: "7C9E18123F97C342"
+			tasks: [{
+				id: "19AAE4C2688A8AED"
+				type: "item"
+				item: "farmersdelight:roast_chicken"
+				count: 4L
+			}]
+			rewards: [{
+				id: "438829BFCDC41A1E"
+				type: "item"
 				item: "contenttweaker:cubecake_slice"
 			}]
 		}

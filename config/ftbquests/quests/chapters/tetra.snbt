@@ -1,29 +1,30 @@
 {
-	id: "2844E38F7C2B2AAC",
-	group: "42A6EB9D3015AD5C",
-	order_index: 0,
-	filename: "tetra",
-	title: "Tetra",
-	default_quest_shape: "",
+	id: "2844E38F7C2B2AAC"
+	group: "42A6EB9D3015AD5C"
+	order_index: 0
+	filename: "tetra"
+	title: "Tetra"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [{
-		title: "Quality Smithing",
-		x: 0.5d,
-		y: -0.5d,
-		description: ["Planar stabalizers can enable your tools to gain an extra bit of damage or speed when the main parts are crafted at a forge hammer. Just slot the stabalizer into one of the sides and craft a component to see its effects."],
-		dependencies: ["5C61ACE4FD992AEF"],
-		hide: true,
-		size: 1.5d,
-		id: "0F18FA7EC543FC64",
+		title: "Quality Smithing"
+		x: 0.5d
+		y: -0.5d
+		description: ["Planar stabalizers can enable your tools to gain an extra bit of damage or speed when the main parts are crafted at a forge hammer. Just slot the stabalizer into one of the sides and craft a component to see its effects."]
+		dependencies: ["5C61ACE4FD992AEF"]
+		hide: true
+		size: 1.5d
+		id: "0F18FA7EC543FC64"
 		tasks: [{
-			id: "504EA6ABB1AA59F2",
-			type: "item",
-			item: "tetra:planar_stabilizer",
+			id: "504EA6ABB1AA59F2"
+			type: "item"
+			item: "tetra:planar_stabilizer"
 			count: 2L
-		}],
+		}]
 		rewards: [{
-			id: "0044536099F88EEB",
-			type: "item",
-			item: "contenttweaker:cubecake_slice"
+			id: "6746025ED3AF1D01"
+			type: "item"
+			item: "kubejs:cubecake_slice"
 		}]
 	}]
 }

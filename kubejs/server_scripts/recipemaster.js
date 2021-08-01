@@ -18,6 +18,8 @@ onEvent('recipes', event => {
 		event.remove({type: 'minecraft:smithing', output: minecraftRemovalFull});
 	});
 
+	event.remove({mod: 'mekanism'})
+
 	event.shaped('mermaidtail:deep_sea_necklace', [
 	   'IDI',
 	   'DTD',
@@ -25,7 +27,7 @@ onEvent('recipes', event => {
 	], {
 	I: 'minecraft:iron_ingot',
 	D: 'minecraft:diamond',
-	T: 'losttrinkets:turtle_shell'
+	T: 'minecraft:turtle_helmet'
 	});
 
 	event.shaped('curios:ring', [
@@ -38,16 +40,6 @@ onEvent('recipes', event => {
     	B: 'create:builders_tea',
     	R: 'ars_nouveau:ring_of_potential'
     	});
-
-    event.shaped('losttrinkets:magical_feathers', [
-    'FEF',
-    'FRF',
-    'FPF'
-    ], {
-    F: 'minecraft:feather',
-    E: 'minecraft:elytra',
-    R: 'curios:ring',
-    P: Item.of('minecraft:potion', {Potion:"minecraft:long_slow_falling"})
 
 	});
 	event.shapeless('mermaidtail:glowing_deep_sea_necklace', ['minecraft:glowstone_dust', 'mermaidtail:deep_sea_necklace'])
@@ -89,7 +81,5 @@ onEvent('recipes', event => {
    	event.recipes.create.crushing([
    	    'cavesandcliffs:amethyst_shard', Item.of('cavesandcliffs:amethyst_shard').withChance(0.75), Item.of('cavesandcliffs:amethyst_shard').withChance(0.50), Item.of('cavesandcliffs:amethyst_shard').withChance(0.25)],
         'cavesandcliffs:amethyst_block');
-
-});
 
 });

@@ -60,9 +60,6 @@
 
 	#Handles the Damage Resistances and Vulnerabilities
 	[Wither."Resistances & Vulnerabilities"]
-		#Bonus magic damage based off missing health. 150 means that every 150 missing health the damage will be amplified by 100%. E.g. The difficulty = 0 Wither (with 300 max health) is at half health (so it's missing 150hp), on magic damage he will receive 'magic_damage * (missing_health / magic_damage_bonus + 1)' = 'magic_damage * (150 / 150 + 1)' = 'magic_damage * 2'.
-		#Range: 0.0 ~ 1024.0
-		"Magic Damage Bonus" = 200.0
 		#Percentage Melee Damage Reduction (per difficulty) while the Wither is above half health.
 		#Range: 0.0 ~ 1.0
 		"Melee Damage reduction per Difficulty above half health" = 0.01
@@ -75,6 +72,9 @@
 		#Cap for 'Melee Damage Reduction per Difficulty below half health'
 		#Range: 0.0 ~ 1.0
 		"Max Melee Damage reduction per Difficulty below half health" = 0.48
+		#Bonus magic damage based off missing health. 150 means that every 150 missing health the damage will be amplified by 100%. E.g. The difficulty = 0 Wither (with 300 max health) is at half health (so it's missing 150hp), on magic damage he will receive 'magic_damage * (missing_health / magic_damage_bonus + 1)' = 'magic_damage * (150 / 150 + 1)' = 'magic_damage * 2'.
+		#Range: 0.0 ~ 1024.0
+		"Magic Damage Bonus" = 250.0
 
 	#Bonus Experience and Drops
 	[Wither.Rewards]
@@ -111,21 +111,21 @@
 		"Max Minions Around" = 20
 		#Minimum ticks (20 ticks = 1 seconds) after Minions can spwan.
 		#Range: > 0
-		"Minimum Cooldown" = 240
+		"Minimum Cooldown" = 300
 		#Maximum ticks (20 ticks = 1 seconds) after Minions can spwan.
 		#Range: > 0
-		"Maximum Cooldown" = 480
+		"Maximum Cooldown" = 600
 		#Min and Max cooldowns are multiplied by this value when the Wither drops below half health. Set to 1 to not change the cooldown when the wither's health drops below half.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Cooldown Multiplier Below Half Health" = 0.6
 		#Percentage bonus speed per difficulty. (0.01 means 1%)
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Bonus Movement Speed Per Difficulty" = 0.012
-		#Wither Minions will die when the Wither that spawned them dies.
-		"Kill Minions on Wither Death" = true
 		#Wither Minions will take magic damage multiplied by this value.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Magic Damage Multiplier" = 3.0
+		#Wither Minions will die when the Wither that spawned them dies.
+		"Kill Minions on Wither Death" = true
 
 		[Wither.Minions.Equipment]
 			#Wither Minions will spawn with a Stone Sword
@@ -141,7 +141,7 @@
 			"Power / Sharpness Chance" = 0.2
 			#Chance (per difficulty) for the Wither Minion Sword / Bow to be enchanted with Knockback / Punch. Note that every 100% chance adds one guaranteed level of the enchantment, while the remaining chance dictates if one more level will be added.
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Punch / Knockback Chance" = 0.04
+			"Punch / Knockback Chance" = 0.1
 
 	#Makes the Wither smarter (will no longer try to stand on the player's head ...), attack faster and hit harder
 	[Wither.Attack]
@@ -149,16 +149,16 @@
 		"Apply to Vanilla Wither" = true
 		#Chance every time the Wither takes damage to start a charge attack. The chance is doubled when the Wither is below half health.
 		#Range: 0.0 ~ 1.0
-		"Charge Attack Chance" = 0.015
+		"Charge Attack Chance" = 0.02
 		#Chance (per difficulty) every time the Wither takes damage to start a barrage attack. The chance is doubled when the Wither is below half health
 		#Range: 0.0 ~ 1.0
-		"Barrage Attack Chance" = 0.002
+		"Barrage Attack Chance" = 0.00175
 		#Max Chance for the barrage attack. The max chance is doubled when the Wither is below half health
 		#Range: 0.0 ~ 1.0
-		"Max Barrage Attack Chance" = 0.05
+		"Max Barrage Attack Chance" = 0.04
 		#Percentage bonus damage dealt by the Wither per difficulty.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Increased Damage" = 0.06
+		"Increased Damage" = 0.05
 
 		#Wither Skull Changes
 		[Wither.Attack.Skulls]

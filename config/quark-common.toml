@@ -18,7 +18,7 @@
 	#Set to true if you need to find the class name for a screen that's causing problems
 	"Print Screen Classnames" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "com.blakebr0.extendedcrafting.client.screen.EliteTableScreen", "com.blakebr0.extendedcrafting.client.screen.EliteAutoTableScreen", "com.blakebr0.extendedcrafting.client.screen.UltimateTableScreen", "com.blakebr0.extendedcrafting.client.screen.UltimateAutoTableScreen", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen"]
+	"Ignored Screens" = []
 	#Set to true to make the quark big worldgen features such as stone clusters or underground biomes generate as spheres rather than unique shapes. It's faster, but won't look as cool
 	"Use Fast Worldgen" = false
 	#Enables quark network profiling features. Do not enable this unless requested to.
@@ -47,12 +47,12 @@
 	"Feeding Trough" = true
 	Gravisand = true
 	"Iron Rod" = true
+	"Jukebox Automation" = true
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
 	"Pistons Move Tile Entities" = true
 	"Redstone Circuit" = true
 	"Weather Sensor" = true
-	"Jukebox Automation" = true
 
 	[automation.chain_linkage]
 		#Can vehicle-linking chains be used for crafting chain armor?
@@ -216,9 +216,9 @@
 
 	[building.variant_chests]
 		"Replace Worldgen Chests" = true
+		"Enable Reverting Wooden Chests" = true
 		#Chests to put in each structure. The format per entry is "structure=chest", where "structure" is a structure ID, and "chest" is a block ID, which must correspond to a standard chest block.
 		"Structure Chests" = ["minecraft:village_plains=quark:oak_chest", "minecraft:igloo=quark:spruce_chest", "minecraft:village_snowy=quark:spruce_chest", "minecraft:village_taiga=quark:spruce_chest", "minecraft:desert_pyramid=quark:birch_chest", "minecraft:jungle_pyramid=quark:jungle_chest", "minecraft:village_desert=quark:jungle_chest", "minecraft:village_savanna=quark:acacia_chest", "minecraft:mansion=quark:dark_oak_chest", "minecraft:pillager_outpost=quark:dark_oak_chest", "minecraft:ruined_portal=quark:crimson_chest", "minecraft:bastion_remnant=quark:crimson_chest", "minecraft:fortress=quark:nether_brick_chest", "minecraft:endcity=quark:purpur_chest"]
-		"Enable Reverting Wooden Chests" = true
 
 	[building.variant_ladders]
 		"Change Names" = true
@@ -248,6 +248,7 @@
 
 [tools]
 	Abacus = true
+	"Ambient Discs" = true
 	"Ancient Tomes" = true
 	"Bottled Cloud" = true
 	Camera = true
@@ -257,7 +258,9 @@
 	"Seed Pouch" = true
 	"Slime In A Bucket" = true
 	Trowel = true
-	"Ambient Discs" = true
+
+	[tools.ambient_discs]
+		"Drop On Spider Kill" = true
 
 	[tools.ancient_tomes]
 		#Set to 0 to not generate in Dungeons
@@ -275,9 +278,9 @@
 		#Set to 0 to not generate in Monster Boxes
 		"Monster Box Weight" = 5
 		"Item Quality" = 2
-		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
 		"Normal Upgrade Cost" = 10
 		"Limit Break Upgrade Cost" = 30
+		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
 
 	[tools.bottled_cloud]
 		"Cloud Level Bottom" = 127
@@ -289,7 +292,7 @@
 		"Jungle Temple Weight" = 8
 		"Desert Temple Weight" = 8
 		"Item Quality" = 0
-		"Apply Cost" = 15
+		"Apply Cost" = 5
 
 	[tools.pathfinder_maps]
 		#In this section you can add custom Pathfinder Maps. This works for both vanilla and modded biomes.
@@ -339,10 +342,7 @@
 		#Amount of blocks placed is this value + 1.
 		#Set to 0 to make the Trowel unbreakable
 		#Allowed values: [0,)
-		"Trowel Max Durability" = 255
-
-	[tools.ambient_discs]
-		"Drop On Spider Kill" = true
+		"Trowel Max Durability" = 0
 
 [tweaks]
 	"Skull Pikes" = true
@@ -363,6 +363,7 @@
 	"Infinity Bucket" = true
 	"Lava Bucket As Trash" = true
 	"Lock Rotation" = true
+	"More Banner Layers" = true
 	"Note Block Mob Sounds" = true
 	"Pat The Dogs" = true
 	"Poison Potato Usage" = true
@@ -374,7 +375,6 @@
 	"Springy Slime" = true
 	"Utility Recipes" = true
 	"Villagers Follow Emeralds" = true
-	"More Banner Layers" = true
 
 	[tweaks.skull_pikes]
 		"Pike Range" = 5.0
@@ -423,6 +423,10 @@
 		Cost = 10
 		#Set this to false to prevent dispensers from using infinite water buckets
 		"Allow Dispensers To Use" = true
+
+	[tweaks.more_banner_layers]
+		#Allowed values: [1,16]
+		"Layer Limit" = 16
 
 	[tweaks.pat_the_dogs]
 		#How many ticks it takes for a dog to want affection after being pet/tamed; leave -1 to disable
@@ -483,10 +487,6 @@
 		#Can bones be smelted down to bone meal?
 		"Bone Meal Utility" = true
 
-	[tweaks.more_banner_layers]
-		#Allowed values: [1,16]
-		"Layer Limit" = 16
-
 [world]
 	"Big Dungeon" = true
 	"Big Stone Clusters" = true
@@ -495,6 +495,7 @@
 	"Cave Roots" = true
 	"Chorus Vegetation" = true
 	Crevices = true
+	Deepslate = false
 	"Fairy Rings" = true
 	"Mega Caves" = true
 	"Monster Box" = true
@@ -514,7 +515,6 @@
 	"Sandstone Underground Biome" = true
 	"Slime Underground Biome" = true
 	"Spider Nest Underground Biome" = true
-	Deepslate = true
 
 	[world.big_dungeon]
 		#The chance that a big dungeon spawn candidate will be allowed to spawn. 0.2 is 20%, which is the same as the Pillager Outpost.
@@ -1077,6 +1077,15 @@
 				# beach, void, overworld, nether, end]
 				"Biome Types" = ["ocean", "beach"]
 				"Is Blacklist" = true
+
+	[world.deepslate]
+		"Sheet Height" = 18
+		"Sheet Height Variance" = 6
+		"Sheet Y Start" = 0
+
+		[world.deepslate.dimensions]
+			"Is Blacklist" = false
+			Dimensions = ["minecraft:overworld"]
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
@@ -1643,15 +1652,6 @@
 				"Biome Types" = ["plains"]
 				"Is Blacklist" = false
 
-	[world.deepslate]
-		"Sheet Height" = 18
-		"Sheet Height Variance" = 6
-		"Sheet Y Start" = 0
-
-		[world.deepslate.dimensions]
-			"Is Blacklist" = false
-			Dimensions = ["minecraft:overworld"]
-
 [mobs]
 	Crabs = true
 	Forgotten = true
@@ -1926,7 +1926,7 @@
 		"Shiny Animal Chance" = 2048
 
 [oddities]
-	Backpack = true
+	Backpack = false
 	Crate = true
 	Magnets = true
 	"Matrix Enchanting" = true

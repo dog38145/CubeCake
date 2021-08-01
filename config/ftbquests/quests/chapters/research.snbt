@@ -1,391 +1,394 @@
 {
-	id: "62780808D8E4422A",
-	group: "",
-	order_index: 1,
-	filename: "research",
-	title: "Research",
-	icon: "minecraft:experience_bottle",
-	default_quest_shape: "",
+	id: "62780808D8E4422A"
+	group: ""
+	order_index: 1
+	filename: "research"
+	title: "Research"
+	icon: "minecraft:experience_bottle"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Engineering I",
-			icon: "create:andesite_alloy",
-			x: 0.0d,
-			y: 2.0d,
-			subtitle: "Time to grease them elbows!",
-			description: ["Unlocks basic Create items!"],
-			id: "5A6AF482905FB42D",
+			title: "Engineering I"
+			icon: "create:andesite_alloy"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Time to grease them elbows!"
+			description: ["Unlocks basic Create items!"]
+			id: "5A6AF482905FB42D"
 			tasks: [{
-				id: "6AA1E5637628A324",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "1B43E5286E9A966D"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "2B3B24535EE6D861",
-				type: "gamestage",
-				title: "Engineering I",
-				icon: "create:wrench",
-				auto: "invisible",
+				id: "2B3B24535EE6D861"
+				type: "gamestage"
+				title: "Engineering I"
+				icon: "create:wrench"
+				auto: "invisible"
 				stage: "engineeri"
 			}]
-		},
+		}
 		{
-			title: "Engineering II",
-			icon: "create:copper_ingot",
-			x: 0.0d,
-			y: 0.0d,
-			subtitle: "Time to grease them elbows!",
-			description: ["Unlocks more advanced Create items!"],
-			dependencies: ["5A6AF482905FB42D"],
-			id: "314DF3F9ED665D5D",
+			title: "Engineering II"
+			icon: "create:copper_ingot"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Time to grease them elbows!"
+			description: ["Unlocks more advanced Create items!"]
+			dependencies: ["5A6AF482905FB42D"]
+			id: "314DF3F9ED665D5D"
 			tasks: [{
-				id: "7488D75F022591F9",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
-				count: 2L,
+				id: "63EA110D26692CE6"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+				count: 2L
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "5B6DB8A2B61D36C6",
-				type: "gamestage",
-				title: "Engineering II",
-				icon: "create:wrench",
-				auto: "invisible",
+				id: "5B6DB8A2B61D36C6"
+				type: "gamestage"
+				title: "Engineering II"
+				icon: "create:wrench"
+				auto: "invisible"
 				stage: "engineerii"
 			}]
-		},
+		}
 		{
-			title: "Engineering III",
-			icon: "create:brass_ingot",
-			x: 0.0d,
-			y: -2.0d,
-			subtitle: "Time to grease them elbows!",
-			description: ["Unlocks brass related Create recipes!"],
-			dependencies: ["314DF3F9ED665D5D"],
-			id: "3CDA1BC521483915",
+			title: "Engineering III"
+			icon: "create:brass_ingot"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Time to grease them elbows!"
+			description: ["Unlocks brass related Create recipes!"]
+			dependencies: ["314DF3F9ED665D5D"]
+			id: "3CDA1BC521483915"
 			tasks: [{
-				id: "160DDC4141B52DAD",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
-				count: 2L,
+				id: "26EC993ABC709F01"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+				count: 2L
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "1D158B2A295F2DBD",
-				type: "gamestage",
-				title: "Engineering III",
-				icon: "create:wrench",
-				auto: "invisible",
+				id: "1D158B2A295F2DBD"
+				type: "gamestage"
+				title: "Engineering III"
+				icon: "create:wrench"
+				auto: "invisible"
 				stage: "engineeriii"
 			}]
-		},
+		}
 		{
-			title: "Engineering IV",
+			title: "Engineering IV"
 			icon: {
-				id: "create:chromatic_compound",
-				Count: 1b,
-				tag: {}
-			},
-			x: 0.0d,
-			y: -4.0d,
-			subtitle: "Time to grease them elbows!",
-			description: ["Unlocks Create gear!"],
-			dependencies: ["3CDA1BC521483915"],
-			id: "22E5C9B841257561",
+				id: "create:chromatic_compound"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.0d
+			y: -4.0d
+			subtitle: "Time to grease them elbows!"
+			description: ["Unlocks Create gear!"]
+			dependencies: ["3CDA1BC521483915"]
+			id: "22E5C9B841257561"
 			tasks: [{
-				id: "42EB028522B10226",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "024A37FFFCAC7160"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "2463EFBA16297EC6",
-				type: "gamestage",
-				title: "Engineering IV",
-				icon: "create:wrench",
-				auto: "invisible",
+				id: "2463EFBA16297EC6"
+				type: "gamestage"
+				title: "Engineering IV"
+				icon: "create:wrench"
+				auto: "invisible"
 				stage: "engineeriv"
 			}]
-		},
+		}
 		{
-			title: "Chef I",
-			icon: "minecraft:smoker",
-			x: -2.0d,
-			y: 2.0d,
-			subtitle: "Let's turn up the heat!",
-			description: ["Unlocks the smoker, blast furnace, and cutting board!"],
-			id: "7CCCBE9F3A21D8A9",
+			title: "Chef I"
+			icon: "minecraft:smoker"
+			x: -2.0d
+			y: 2.0d
+			subtitle: "Let's turn up the heat!"
+			description: ["Unlocks the smoker, blast furnace, and cutting board!"]
+			id: "7CCCBE9F3A21D8A9"
 			tasks: [{
-				id: "7F96349395212B32",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "16DFECA2668CD069"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "68649A1A8726E33E",
-				type: "gamestage",
-				title: "Chef I",
+				id: "68649A1A8726E33E"
+				type: "gamestage"
+				title: "Chef I"
 				icon: {
-					id: "farmersdelight:iron_knife",
-					Count: 1b,
+					id: "farmersdelight:iron_knife"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
-				},
-				auto: "invisible",
+				}
+				auto: "invisible"
 				stage: "chefi"
 			}]
-		},
+		}
 		{
-			title: "Chef II",
-			icon: "farmersdelight:cooking_pot",
-			x: -2.0d,
-			y: 0.0d,
-			subtitle: "Let's turn up the heat!",
-			description: ["Unlocks the stove, furnace mk2, and cooking pot!"],
-			dependencies: ["7CCCBE9F3A21D8A9"],
-			id: "45148E7537F38CEE",
+			title: "Chef II"
+			icon: "farmersdelight:cooking_pot"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Let's turn up the heat!"
+			description: ["Unlocks the stove, furnace mk2, and cooking pot!"]
+			dependencies: ["7CCCBE9F3A21D8A9"]
+			id: "45148E7537F38CEE"
 			tasks: [{
-				id: "3DBC2C02E18B4745",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "73630F53028AC385"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "7071C13D1231EF6E",
-				type: "gamestage",
-				title: "Chef II",
+				id: "7071C13D1231EF6E"
+				type: "gamestage"
+				title: "Chef II"
 				icon: {
-					id: "farmersdelight:iron_knife",
-					Count: 1b,
+					id: "farmersdelight:iron_knife"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
-				},
-				auto: "invisible",
+				}
+				auto: "invisible"
 				stage: "chefii"
 			}]
-		},
+		}
 		{
-			title: "Hoarder I",
-			icon: "refinedstorage:crafting_grid",
-			x: -2.0d,
-			y: -2.0d,
-			subtitle: "Store ALL the stuff!",
-			description: ["Unlocks the basics for Refined Storage!"],
-			dependencies: ["3CDA1BC521483915"],
-			id: "74E8D5726E128A7B",
+			title: "Hoarder I"
+			icon: "refinedstorage:crafting_grid"
+			x: -2.0d
+			y: -2.0d
+			subtitle: "Store ALL the stuff!"
+			description: ["Unlocks the basics for Refined Storage!"]
+			dependencies: ["3CDA1BC521483915"]
+			id: "74E8D5726E128A7B"
 			tasks: [{
-				id: "6BDF15EB1B9F28C3",
-				type: "item",
-				item: "contenttweaker:brass_eye",
+				id: "389A0E737D17594F"
+				type: "item"
+				item: "kubejs:brass_eye"
 				count: 64L
-			}],
+				consume_items: true
+			}]
 			rewards: [{
-				id: "0D8C9B2ABDE8FE84",
-				type: "gamestage",
-				title: "Hoarder I",
-				icon: "refinedstorage:1k_storage_block",
-				auto: "invisible",
+				id: "0D8C9B2ABDE8FE84"
+				type: "gamestage"
+				title: "Hoarder I"
+				icon: "refinedstorage:1k_storage_block"
+				auto: "invisible"
 				stage: "hoarderi"
 			}]
-		},
+		}
 		{
-			title: "Hoarder II",
-			icon: "refinedstorage:crafting_grid",
-			x: -2.0d,
-			y: -4.0d,
-			subtitle: "Store ALL the stuff!",
-			description: ["Unlocks more advanced stuff for Refined Storage!"],
-			dependencies: ["74E8D5726E128A7B"],
-			id: "16310493E0A1126D",
+			title: "Hoarder II"
+			icon: "refinedstorage:crafting_grid"
+			x: -2.0d
+			y: -4.0d
+			subtitle: "Store ALL the stuff!"
+			description: ["Unlocks more advanced stuff for Refined Storage!"]
+			dependencies: ["74E8D5726E128A7B"]
+			id: "16310493E0A1126D"
 			tasks: [{
-				id: "2F07E3AFB4880899",
-				type: "item",
-				item: "contenttweaker:brass_eye",
+				id: "0A0527B911823AFA"
+				type: "item"
+				item: "kubejs:brass_eye"
 				count: 256L
-			}],
+				consume_items: true
+			}]
 			rewards: [{
-				id: "21CF70BDCDAEAADB",
-				type: "gamestage",
-				title: "Hoarder II",
-				icon: "refinedstorage:1k_storage_block",
-				auto: "invisible",
+				id: "21CF70BDCDAEAADB"
+				type: "gamestage"
+				title: "Hoarder II"
+				icon: "refinedstorage:1k_storage_block"
+				auto: "invisible"
 				stage: "hoarderii"
 			}]
-		},
+		}
 		{
-			title: "Pack Mule I",
-			icon: "sophisticatedbackpacks:backpack",
-			x: -4.0d,
-			y: -2.0d,
-			subtitle: "Hee haw!",
-			description: ["Unlocks all tiers of backpack up to gold!"],
-			id: "77F937D53E06FD94",
+			title: "Pack Mule I"
+			icon: "sophisticatedbackpacks:backpack"
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Hee haw!"
+			description: ["Unlocks all tiers of backpack up to gold!"]
+			id: "77F937D53E06FD94"
 			tasks: [{
-				id: "3DD0341433EEF05A",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "3DD0341433EEF05A"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "6B92BE02610C67E0",
-				type: "gamestage",
-				title: "Pack Mule I",
-				icon: "minecraft:leather_horse_armor",
-				auto: "invisible",
+				id: "6B92BE02610C67E0"
+				type: "gamestage"
+				title: "Pack Mule I"
+				icon: "minecraft:leather_horse_armor"
+				auto: "invisible"
 				stage: "packmulei"
 			}]
-		},
+		}
 		{
-			title: "Pack Mule II",
-			icon: "sophisticatedbackpacks:backpack",
-			x: -4.0d,
-			y: -4.0d,
-			subtitle: "Hee haw!",
-			description: ["Unlocks all tiers of backpack!"],
-			dependencies: ["77F937D53E06FD94"],
-			id: "2CEB07AA31B0F1B2",
+			title: "Pack Mule II"
+			icon: "sophisticatedbackpacks:backpack"
+			x: -4.0d
+			y: -4.0d
+			subtitle: "Hee haw!"
+			description: ["Unlocks all tiers of backpack!"]
+			dependencies: ["77F937D53E06FD94"]
+			id: "2CEB07AA31B0F1B2"
 			tasks: [{
-				id: "47B623C029B5C9E4",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
-				count: 3L,
+				id: "47B623C029B5C9E4"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+				count: 3L
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "727A8737C4C3DED9",
-				type: "gamestage",
-				title: "Pack Mule II",
-				icon: "minecraft:leather_horse_armor",
-				auto: "invisible",
+				id: "727A8737C4C3DED9"
+				type: "gamestage"
+				title: "Pack Mule II"
+				icon: "minecraft:leather_horse_armor"
+				auto: "invisible"
 				stage: "packmuleii"
 			}]
-		},
+		}
 		{
-			title: "Pilot I",
+			title: "Pilot I"
 			icon: {
-				id: "simpleplanes:plane",
-				Count: 1b,
+				id: "simpleplanes:plane"
+				Count: 1b
 				tag: {
 					EntityTag: {
 						material: "minecraft:iron_block"
 					}
 				}
-			},
-			x: 2.0d,
-			y: 2.0d,
-			subtitle: "Fly like an eagle.",
-			description: ["Unlocks the plane and everything you need to make it!"],
-			id: "48D9938471A85FBD",
+			}
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Fly like an eagle."
+			description: ["Unlocks the plane and everything you need to make it!"]
+			id: "48D9938471A85FBD"
 			tasks: [{
-				id: "639F0179CF999E37",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "36C439B2D8796926"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "1A318358AA8B4A92",
-				type: "gamestage",
-				title: "Pilot I",
-				icon: "simpleplanes:propeller",
-				auto: "invisible",
+				id: "1A318358AA8B4A92"
+				type: "gamestage"
+				title: "Pilot I"
+				icon: "simpleplanes:propeller"
+				auto: "invisible"
 				stage: "piloti"
 			}]
-		},
+		}
 		{
-			title: "Pilot II",
+			title: "Pilot II"
 			icon: {
-				id: "simpleplanes:plane",
-				Count: 1b,
+				id: "simpleplanes:plane"
+				Count: 1b
 				tag: {
 					EntityTag: {
 						material: "minecraft:iron_block"
 					}
 				}
-			},
-			x: 2.0d,
-			y: 0.0d,
-			subtitle: "Fly like an eagle.",
-			description: ["Unlocks the large plane, float, and quick fix kit!"],
-			dependencies: ["48D9938471A85FBD"],
-			id: "6FEB081AD893E850",
+			}
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Fly like an eagle."
+			description: ["Unlocks the large plane, float, and quick fix kit!"]
+			dependencies: ["48D9938471A85FBD"]
+			id: "6FEB081AD893E850"
 			tasks: [{
-				id: "49BA4831E61F8B01",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "196483D754B7D6A9"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "77F0C61ABF526F57",
-				type: "gamestage",
-				title: "Pilot II",
-				icon: "simpleplanes:propeller",
-				auto: "invisible",
+				id: "77F0C61ABF526F57"
+				type: "gamestage"
+				title: "Pilot II"
+				icon: "simpleplanes:propeller"
+				auto: "invisible"
 				stage: "pilotii"
 			}]
-		},
+		}
 		{
-			title: "Pilot III",
+			title: "Pilot III"
 			icon: {
-				id: "simpleplanes:plane",
-				Count: 1b,
+				id: "simpleplanes:plane"
+				Count: 1b
 				tag: {
 					EntityTag: {
 						material: "minecraft:iron_block"
 					}
 				}
-			},
-			x: 2.0d,
-			y: -2.0d,
-			subtitle: "Fly like an eagle.",
-			description: ["Unlocks the helicopter and booster!"],
-			dependencies: ["6FEB081AD893E850"],
-			id: "5A0F1866DD25C261",
+			}
+			x: 2.0d
+			y: -2.0d
+			subtitle: "Fly like an eagle."
+			description: ["Unlocks the helicopter and booster!"]
+			dependencies: ["6FEB081AD893E850"]
+			id: "5A0F1866DD25C261"
 			tasks: [{
-				id: "65CC3AB1A5CEE66F",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
-				count: 2L,
+				id: "4F5E2220E644E201"
+				type: "item"
+				item: "kubejs:cubecake_slice"
+				count: 2L
 				consume_items: true
-			}],
+			}]
 			rewards: [{
-				id: "40CEBB15E9604F66",
-				type: "gamestage",
-				title: "Pilot III",
-				icon: "simpleplanes:propeller",
-				auto: "invisible",
+				id: "40CEBB15E9604F66"
+				type: "gamestage"
+				title: "Pilot III"
+				icon: "simpleplanes:propeller"
+				auto: "invisible"
 				stage: "pilotiii"
 			}]
-		},
+		}
 		{
-			title: "Engineering V",
+			title: "Engineering V"
 			icon: {
-				id: "custommachinery:custom_machine_item",
-				Count: 1b,
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
 				tag: {
 					machine: "cubecakemachines:ore_processor"
 				}
-			},
-			x: 2.0d,
-			y: -4.0d,
-			subtitle: "Time to grease them elbows!",
-			description: ["Unlocks the Ore Processor!"],
-			dependencies: ["22E5C9B841257561"],
-			id: "1C738651491F6E09",
+			}
+			x: 2.0d
+			y: -4.0d
+			subtitle: "Time to grease them elbows!"
+			description: ["Unlocks the Ore Processor!"]
+			dependencies: ["22E5C9B841257561"]
+			id: "1C738651491F6E09"
 			tasks: [{
-				id: "76861470F5DDFC58",
-				type: "item",
-				item: "contenttweaker:cubecake_slice",
+				id: "47034E698F2C7C9D"
+				type: "item"
+				item: "kubejs:cubecake_slice"
 				count: 2L
-			}],
+			}]
 			rewards: [{
-				id: "7CD1D9FD20E7922A",
-				type: "gamestage",
-				title: "Engineering V",
-				icon: "create:wrench",
-				auto: "invisible",
+				id: "7CD1D9FD20E7922A"
+				type: "gamestage"
+				title: "Engineering V"
+				icon: "create:wrench"
+				auto: "invisible"
 				stage: "engineerv"
 			}]
 		}

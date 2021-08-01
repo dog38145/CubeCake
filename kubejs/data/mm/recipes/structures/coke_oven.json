@@ -1,0 +1,60 @@
+{
+  "type": "masterfulmachinery:machine_structure",
+  "id": "coke_oven",
+  "controllerId": "coke_oven_controller",
+  "name": "Coke Oven",
+  "layout": [
+    [
+      ")***)",
+      "*****",
+      "*****",
+      "*****",
+      ")***)"
+    ],
+    [
+      ")***)",
+      "*   *",
+      "C   +",
+      "*   *",
+      ")***)"
+    ],
+    [
+      ")***)",
+      "*   *",
+      "*   *",
+      "*   *",
+      ")***)"
+    ],
+    [
+      ")***)",
+      "*****",
+      "**,**",
+      "*****",
+      ")***)"
+    ],
+    [
+      " --- ",
+      "-----",
+      "-- --",
+      "-----",
+      " --- "
+    ]
+  ],
+  "legend": {
+    ")": {
+      "block": "quark:iron_plate"
+    },
+    "*": {
+      "block": "kubejs:coke_oven_bricks"
+    },
+    "+": {
+      "block": "masterfulmachinery:coke_oven_controller_coke_oven_item_port_items_output"
+    },
+    ",": {
+      "block": "masterfulmachinery:coke_oven_controller_coke_oven_item_port_items_input"
+    },
+    "-": {
+      "block": "quark:iron_plate_slab"
+    }
+  }
+}

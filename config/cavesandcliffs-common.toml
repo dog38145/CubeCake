@@ -2,11 +2,11 @@
 ["Ore Generation Settings"]
 	#determines if default copper ore should generate.
 	#Note: this doesn't disable the generation of modded copper ore
-	generateCopperOre = false
+	generateCopperOre = true
 	#determines if tuff blobs should generate between y0 - y16
 	generateTuffBlobs = true
 	#determines if deepslate blobs should generate between y0 - y16
-	generateDeepslateBlobs = false
+	generateDeepslateBlobs = true
 
 ["World Generation Settings"]
 	#determines the chance of amethyst geodes to spawn.
@@ -58,9 +58,9 @@
 	generateAquifers = true
 	#determines if deepslate should generate.
 	#Note: you can increase the height of the generation of deepslate using 'deepslateLayerMaxHeight' setting.
-	generateDeepslate = false
+	generateDeepslate = true
 	#determines if noodle caves should generate.
 	generateNoodleCaves = true
 	#determines if ore veins should generate.
-	generateOreVeins = false
+	generateOreVeins = true
 

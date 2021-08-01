@@ -1,0 +1,30 @@
+{
+"gas.kubejs.raw_syn_gas": "Raw Syn Gas",
+"gas.kubejs.refined_syn_gas": "Refined Syn Gas",
+
+"fluid.kubejs.oil": "Oil",
+
+"block.kubejs.blast_furnace_bricks": "Blast Furnace Bricks",
+"block.kubejs.coke_oven_bricks": "Coke Oven Bricks",
+"block.kubejs.raw_zinc_block": "Block of Raw Zinc",
+"block.kubejs.endritium_frame": "Endritium Frame",
+"block.kubejs.endritium_core": "Endritium Core",
+"block.kubejs.endritium_relay": "Endritium Relay",
+
+"item.kubejs.raw_zinc_ore": "Raw Zinc Ore",
+"item.kubejs.copper_dust": "Copper Dust",
+"item.kubejs.zinc_dust": "Zinc Dust",
+"item.kubejs.gold_dust": "Gold Dust",
+"item.kubejs.iron_dust": "Iron Dust",
+"item.kubejs.lead_dust": "Lead Dust",
+"item.kubejs.uranium_dust": "Uranium Dust",
+"item.kubejs.raw_tin_ore": "Tin Dust",
+"item.kubejs.raw_lead_ore": "Raw Lead Ore",
+"item.kubejs.raw_uranium_ore": "Raw Uranium Ore",
+"item.kubejs.brass_dust": "Brass Dust",
+"item.kubejs.brass_ball": "Brass Ball",
+"item.kubejs.brass_eye": "Brass Eye",
+"item.kubejs.coal_tar": "Coal Tar",
+"item.kubejs.oil_bucket": "Oil Bucket",
+"item.kubejs.cubecake_slice": "CubeCake Slice"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "masterfulmachinery:block/blast_furnace_controller_blast_furnace_item_port_items_input"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "controllerId": "solid_endritium_reactor_controller",
+  "name": "Solid Endritium Reactor",
+  "ports": [
+    {
+      "type": "masterfulmachinery:items",
+      "name": "Solid Endritium Reactor Item",
+      "id": "solid_endritium_reactor_item",
+      "data": {
+        "rows": 1,
+        "columns": 1
+      }
+    },
+    {
+      "type": "masterfulmachinery:energy",
+      "name": "Solid Endritium Reactor Energy",
+      "id": "solid_endritium_reactor_energy",
+      "data": {
+        "capacity": 64000
+      }
+    }
+  ]
+}

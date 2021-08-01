@@ -1,0 +1,15 @@
+{
+  "controllerId": "coke_oven_controller",
+  "name": "Coke Oven",
+  "ports": [
+    {
+      "type": "masterfulmachinery:items",
+      "name": "Coke Oven Item",
+      "id": "coke_oven_item",
+      "data": {
+        "rows": 1,
+        "columns": 1
+      }
+    }
+  ]
+}

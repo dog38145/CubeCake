@@ -9,7 +9,7 @@
 	#Range: 0 ~ 100
 	invAlpha = 0
 	#Toggle on by default
-	byDefault = false
+	byDefault = true
 	#Animate recently picked up items
 	animatedInv = false
 	#Hide background if inventory is empty
@@ -69,13 +69,13 @@
 	invValign = "BOTTOM"
 	#Inventory HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	invHalign = "RIGHT"
+	invHalign = "MIDDLE"
 	#Inventory HUD position (X)
 	#Range: -9999 ~ 9999
-	xPos = 288
+	xPos = 0
 	#Inventory HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPos = 114
+	yPos = 150
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"

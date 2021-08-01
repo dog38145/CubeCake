@@ -1,0 +1,84 @@
+{
+  "type": "masterfulmachinery:machine_structure",
+  "id": "blast_furnace",
+  "controllerId": "blast_furnace_controller",
+  "name": "Blast Furnace",
+  "layout": [
+    [
+      ")***)",
+      "*****",
+      "*****",
+      "*****",
+      ")***)"
+    ],
+    [
+      ")***)",
+      "*   *",
+      "+   ,",
+      "*   *",
+      ")***)"
+    ],
+    [
+      ")***)",
+      "*   *",
+      "C   *",
+      "*   *",
+      ")***)"
+    ],
+    [
+      "-***-",
+      "*****",
+      "** **",
+      "*****",
+      "-***-"
+    ],
+    [
+      " ... ",
+      ".)*).",
+      ".* *.",
+      ".)*).",
+      " ... "
+    ],
+    [
+      "     ",
+      " )*) ",
+      " * * ",
+      " )*) ",
+      "     "
+    ],
+    [
+      "     ",
+      " )*) ",
+      " * * ",
+      " )*) ",
+      "     "
+    ],
+    [
+      "     ",
+      " ... ",
+      " . . ",
+      " ... ",
+      "     "
+    ]
+  ],
+  "legend": {
+    ")": {
+      "block": "dustrial_decor:industrial_iron_pillar"
+    },
+    "*": {
+      "block": "kubejs:blast_furnace_bricks"
+    },
+    "+": {
+      "block": "masterfulmachinery:blast_furnace_controller_blast_furnace_item_port_items_input"
+    },
+    ",": {
+      "block": "masterfulmachinery:blast_furnace_controller_blast_furnace_item_port_items_output"
+    },
+    "-": {
+      "block": "dustrial_decor:industrial_iron_block"
+    },
+    ".": {
+      "block": "dustrial_decor:bolted_industrial_iron_slab"
+    }
+  }
+}

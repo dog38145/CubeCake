@@ -1,0 +1,15 @@
+{
+  "controllerId": "blast_furnace_controller",
+  "name": "Blast Furnace",
+  "ports": [
+    {
+      "type": "masterfulmachinery:items",
+      "name": "Blast Furnace Item",
+      "id": "blast_furnace_item",
+      "data": {
+        "rows": 3,
+        "columns": 3
+      }
+    }
+  ]
+}
